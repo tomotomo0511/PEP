@@ -39,7 +39,7 @@ Things you may want to cover:
 ## postsテーブル
 |Colum|Type|Options|
 |-----|----|-------|
-|title|string|null: false|
+|title|text|null: false|
 |content|text|null ;false|
 |image|text||
 

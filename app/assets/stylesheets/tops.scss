@@ -1,0 +1,71 @@
+// Place all the styles related to the tops controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.content-main {
+  background-color: white;
+  height: 100vh;
+}
+
+.rr {
+  text-align: center;
+  font-size: 150px;
+  margin: 0;
+  padding-top: 200px;
+  color: goldenrod;
+}
+
+.beginners {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  display: block;
+  color: olive;
+  border: solid 4px black;
+  width: 20vw;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.members {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  display: block;
+  color: olive;
+  border: solid 4px black;
+  width: 20vw;
+  margin: auto;
+  
+}
+
+.top-new {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  display: block;
+  margin-top: 10px;
+  color: white;
+}
+
+.top-article {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  display: block;
+  margin-top: 10px;
+  color: black;
+}
+
+.logout-box {
+  color: white;
+  padding: 3px;
+  margin: 0px 0px 0px 0px;
+}

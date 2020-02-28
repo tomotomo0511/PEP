@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PEP</title>
+    <title>Real Review</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,20 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class="header"> 
+      <%= link_to 'Real Review', root_path, class: "rr-title" %>
+      <%= link_to '最新投稿一覧', posts_path, class: "top-title" %>
+      <ul class="rightbox">
+        <% if user_signed_in? %>
+          <%= link_to "マイページ", user_path(current_user), class: "user-title" %>
+          <%= link_to '新規投稿', new_post_path, class: "new" %>
+          <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout-box" %>
+        <% end %>
+      </ul>
+    </header>
+    <div class="all">
+      <%= yield %>
+    <footer class="footer">Production date 2020</footer>
+    </div>
   </body>
 </html>
