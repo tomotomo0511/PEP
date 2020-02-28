@@ -1,0 +1,23 @@
+<h3 class="page-name">■投稿詳細ページ</h3>
+<div class="title-title">タイトル</div>
+<div class="details-title">
+  <%= @post.title %>
+</div>
+<div class="post-Contributor">
+  投稿主 <%= link_to @post.user.nickname, user_path(@post.user), class: "user-all-post" %>
+</div> 
+<div class="details-text-title">投稿内容</div>
+<div class="details">  
+  <div class="details-text">
+    <%= simple_format @post.content %>
+  </div>
+  <div class="details-created_at">
+    <%= @post.created_at %>
+  </div>
+</div>
+<div class="details-edit">
+  <% if user_signed_in? && current_user.id == @post.user_id %>
+    <%= link_to "編集する", edit_post_path(@post.id), class: "details-edit__1"%>
+    <%= link_to "削除する", post_path(@post.id), method: :delete, class: "details-delete" %>
+  <% end %>
+</div>

@@ -1,0 +1,13 @@
+<body>
+  <div class="content-main">
+    <h1 class="rr">Real Review</h1>
+    <% if user_signed_in? %>
+      <%# <%= link_to '新規投稿はこちら', new_post_path, class: "top-new" %> 
+      <%= link_to 'Real Reviewへようこそ', root_path, class: "top-article" %>
+    <% else %>
+      <%= link_to '新規アカウント作成', new_user_registration_path, class: "beginners" %>
+      <%= link_to 'ログイン', new_user_session_path, class: "members" %>
+    <% end %>
+
+  </div>
+</body>

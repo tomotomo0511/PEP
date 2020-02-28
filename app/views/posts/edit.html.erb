@@ -1,0 +1,7 @@
+<h3 class="page-name">■投稿編集ページ</h3>
+<%= form_with model: @post, class: :form, local: true do |form| %>
+  <%= form.text_field :title, placeholder: :記事タイトル, class: :form__title %>
+  <%= form.text_field :image, placeholder: :画像URL, class: :form__image %>
+  <%= form.text_area :content, placeholder: :記事本文, class: :form__text %>
+  <%= form.submit '編集完了', class: :form__btn %>
+<% end %>
