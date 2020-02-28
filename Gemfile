@@ -66,3 +66,5 @@ gem 'devise'
 gem 'pry-rails'
 
 gem 'font-awesome-rails'
+
+gem 'kaminari'
