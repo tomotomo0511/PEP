@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post1, only: [:show, :edit]
   def index
-    @posts = Post.includes(:user).order("created_at DESC").page(params[:page]).per(5)
+    @posts = Post.includes(:user).order("created_at DESC").page(params[:page]).per(2)
   end
 
   def new
@@ -13,6 +13,9 @@ class PostsController < ApplicationController
   end
 
   def show
+    @post = Post.find(params[:id])
+    @comment = Comment.new
+    @comments = @post.comments.includes(:user) 
   end
 
   def edit

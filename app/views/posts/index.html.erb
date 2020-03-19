@@ -1,21 +1,31 @@
-<h3 class="page-name">■最新投稿一覧ページ</h3>
-<% @posts.each do |post| %>
-  <div class="post-box">
-    <div class="post-content">
-      ■ <%= link_to post.title, post_path(post.id), class: :post__title %>
-    </div>
-    <div class="post-Contributor">
-      投稿主 <%= link_to post.user.nickname, user_path(post.user), class: "user-all-post" %>
-      <%# <%= link_to post.image, class: "post-image" %> 
-    </div>
-    <div class="post-date">
-      投稿日時 <%= post.created_at %>
-    </div>
+<body>
+<div class="post-image-n" style="background-image: url(https://cdn.pixabay.com/photo/2016/03/09/09/14/books-1245690_1280.jpg);">
+  <div class="page-a">
+    <h3 class="page-name">■最新投稿一覧ページ</h3>
   </div>
-<% end %>
-<div class="content1">
-  <div class="content1-box"></div>
-</div>
-<div class="paginate">
-  <%= paginate(@posts) %>
-</div>
+  <% @posts.each do |post| %>
+    <div class="content-a">
+      <div class="content1-a">
+        <div class="post-a">
+          <div class="post-image-a" style="background-image: url(<%= post.image %>);"></div>
+          <div class="post-box-a">
+            <div class="post-box-title-a">
+              <%= link_to post.title, "/posts/#{post.id}" %>
+            </div>
+            <div clas="post-box-under-a">
+              <div class="post-box-under-name-a">
+                投稿者 : <%= link_to post.user.nickname, user_path(post.user_id)%>
+              </div>
+              <div class="post-box-under-created_at-a">
+                <%= post.created_at %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="paginate">
+    <%= paginate(@posts) %>
+  </div>
+  </body>

@@ -3,6 +3,7 @@
 <div class="details-title">
   <%= @post.title %>
 </div>
+<div class="post-image-s"><%= image_tag @post.image %></div>
 <div class="post-Contributor">
   投稿主 <%= link_to @post.user.nickname, user_path(@post.user), class: "user-all-post" %>
 </div> 
@@ -15,6 +16,27 @@
     <%= @post.created_at %>
   </div>
 </div>
+
+<div class="comments-box">
+  <h4>＜コメント一覧＞</h4>
+    <% if @comments %>
+     <% @comments.each do |comment| %>
+      <div class="comment-name">
+        <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %></strong>
+         <%= simple_format comment.text %>
+      </div>
+     <% end %>
+    <% end %>
+</div>
+<div class="comment-box">
+  <% if current_user %>
+    <%= form_with(model: [@post, @comment], local: true) do |form| %>
+      <%= form.text_area :text, placeholder: :コメントを入力, class: :form__comment %>
+      <%= form.submit 'コメントを投稿する', class: :form__comment__btn %>
+    <% end %>
+  <% else %>
+    <strong><p>コメントの投稿にはアカウント登録/ログインが必要です</p></strong>
+  <% end %>
 <div class="details-edit">
   <% if user_signed_in? && current_user.id == @post.user_id %>
     <%= link_to "編集する", edit_post_path(@post.id), class: "details-edit__1"%>

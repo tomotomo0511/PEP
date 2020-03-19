@@ -1,12 +1,14 @@
 <body>
   <div class="content-main">
-    <div class="top-big-title-icon"><%= fa_icon 'fa book-open' %></div>
+    <div class="post-image-t" style="background-image: url(https://cdn.pixabay.com/photo/2016/03/07/17/43/coffee-1242653_1280.jpg);">
+     <div class="top-big-title-icon"><%= fa_icon 'fa book-open' %></div>
       <h1 class="rr">Real Review</h1>
-      <% if user_signed_in? %>
-        <%= link_to 'Real Reviewへようこそ', root_path, class: "top-article" %>
-      <% else %>
-        <%= link_to '新規アカウント作成', new_user_registration_path, class: "beginners" %>
-        <%= link_to 'ログイン', new_user_session_path, class: "members" %>
-      <% end %>
+        <% if user_signed_in? %>
+          <%= link_to 'Real Reviewへようこそ', root_path, class: "top-article" %>
+        <% else %>
+          <%= link_to 'アカウント作成', new_user_registration_path, class: "beginners" %>
+          <%= link_to 'ログイン', new_user_session_path, class: "members" %>
+        <% end %>
+      </div>
   </div>
 </body>
