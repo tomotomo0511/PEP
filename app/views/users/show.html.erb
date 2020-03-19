@@ -1,3 +1,4 @@
+<div class="post-image-n" style="background-image: url(https://cdn.pixabay.com/photo/2016/03/09/09/14/books-1245690_1280.jpg);">
 <div class="postTitle">
 <h3 class="page-name">■ユーザーページ</h3>
   <div class="user-post-list">
@@ -9,17 +10,20 @@
     <div class="post-content">
       <%= link_to post.title, post_path(post.id), class: :post__title %>
     </div>
+    <div class="post-image" style="background-image: url(<%= post.image %>);"></div>
     <div class="post-Contributor">
       投稿主 <%= link_to post.user.nickname, user_path(post.user), class: "user-all-post" %>
     </div>
     <div class="post-date">
       投稿日時 <%= post.created_at %>
     </div>
+    </div>
   </div>
 <% end %>
-<div class="content1">
-  <div class="content1-box"></div>
 </div>
+<%# <div class="content1">
+  <div class="content1-box"></div>
+</div> %>
 <div class="paginate">
   <%= paginate(@posts) %>
 </div>

@@ -19,7 +19,7 @@ body {
   font-size: 150px;
   margin: 0;
   padding-top: 200px;
-  color: goldenrod;
+  color: white;
   margin-left: 170px;
 }
 
@@ -28,9 +28,7 @@ body {
   font-weight: bold;
   font-size: 30px;
   display: block;
-  color: olive;
-  border: solid 4px black;
-  width: 20vw;
+  color: white;
   margin: auto;
   margin-bottom: 25px;
 }
@@ -40,9 +38,7 @@ body {
   font-weight: bold;
   font-size: 30px;
   display: block;
-  color: olive;
-  border: solid 4px black;
-  width: 20vw;
+  color: white;
   margin: auto;
   
 }
@@ -62,7 +58,7 @@ body {
   font-size: 30px;
   display: block;
   margin-top: 10px;
-  color: black;
+  color: white;
 }
 
 .logout-box {
@@ -73,8 +69,15 @@ body {
 
 .top-big-title-icon {
   font-size: 150px;
-  color: goldenrod;
+  color: white;
   position: absolute;
   margin-top: 190px;
   margin-left: 180px;
+}
+
+.post-image-t {
+  width: 100vw;
+  height: 115vh;
+  background-size: cover;
+  margin: auto;
 }
