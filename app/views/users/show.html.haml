@@ -1,0 +1,17 @@
+.post-image-n{:style => "background-image: url(https://cdn.pixabay.com/photo/2016/03/09/09/14/books-1245690_1280.jpg);"}
+  .postTitle
+    %h3.page-name ■ユーザーページ
+    .user-post-list
+      = @user.nickname
+      の投稿一覧
+  - @posts.each do |post|
+    .post-box
+      .post-content
+        = link_to post.title, post_path(post.id), class: :post__title
+      .post-image{:style => "background-image: url(#{post.image});"}
+      .post-Contributor
+        投稿主 #{link_to post.user.nickname, user_path(post.user), class: "user-all-post"}
+      .post-date
+        投稿日時 #{post.created_at}
+.paginate
+  = paginate(@posts)

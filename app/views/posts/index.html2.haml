@@ -1,0 +1,12 @@
+%h3.page-name ■最新投稿一覧ページ
+- @posts.each do |post|
+  .post-box
+    .post-image{:style => "background-image: url(#{post.image});"}
+      .post-content
+        ■ #{link_to post.title, post_path(post.id), class: :post__title}
+      .post-Contributor
+        投稿主 #{link_to post.user.nickname, user_path(post.user), class: "user-all-post"}
+      .post-date
+        投稿日時 #{post.created_at}
+.paginate
+  = paginate(@posts)

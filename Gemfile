@@ -77,3 +77,5 @@ gem 'pry-rails'
 gem 'font-awesome-rails'
 
 gem 'kaminari'
+
+gem 'haml-rails'

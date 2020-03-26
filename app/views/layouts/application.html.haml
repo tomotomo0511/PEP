@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title PEP
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = yield
+  -# %body
+  -#   %header.header
+  -#     .header-icon= fa_icon 'fa book-open'
+  -#     = link_to 'PEP', root_path, class: "rr-title"
+  -#     = link_to '最新投稿一覧', posts_path, class: "top-title"
+  -#     %ul.rightbox
+  -#       - if user_signed_in?
+  -#         = link_to "マイページ", user_path(current_user), class: "user-title"
+  -#         = link_to '新規投稿', new_post_path, class: "new"
+  -#         = link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout-box"
+  -#   .all
+  -#     = yield
+  -#     %footer.footer Production date 2020
