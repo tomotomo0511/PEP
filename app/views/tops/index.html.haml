@@ -1,0 +1,34 @@
+= render "header"
+
+.top-page
+  .top-page__title
+    %h1 Dog
+  .top-page__image{style: "background-image: url(https://cdn.pixabay.com/photo/2018/11/01/00/55/animal-3786987_1280.jpg);"}
+  .top-page__texts
+    - if user_signed_in?
+      = link_to 'Welcome to Dog', root_path, class: "top-text"
+      %br
+      %br
+      = link_to 'New article', posts_path, class: "top-text"
+    - else
+      = link_to 'Sign up', new_user_registration_path, class: "top-text"
+      = link_to 'Log in', new_user_session_path, class: "top-text"
+
+
+
+
+
+
+
+
+
+-# %body
+-#   .content-main
+-#     .post-image-t{:style => "background-image: url(https://cdn.pixabay.com/photo/2016/03/07/17/43/coffee-1242653_1280.jpg);"}
+-#       .top-big-title-icon= fa_icon 'fa book-open'
+-#       %h1.rr Real Review
+-#       - if user_signed_in?
+-#         = link_to 'Real Reviewへようこそ', root_path, class: "top-article"
+-#       - else
+-#         = link_to 'アカウント作成', new_user_registration_path, class: "beginners"
+-#         = link_to 'ログイン', new_user_session_path, class: "members"
