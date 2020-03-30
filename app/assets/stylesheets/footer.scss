@@ -1,0 +1,26 @@
+.footer {
+  background-color: black;
+  height: 70px;
+  width: auto;
+  border-bottom: solid 3px white;
+  &__content {
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px white;
+    .footer-boxs {
+      border: solid 1px white;
+      text-align: center;
+      margin: auto 0;
+      width: 100%;
+      .footer-box {
+        color: white;
+        margin: auto 10px;
+        border: solid 1px white;
+      }
+    }
+  }
+}

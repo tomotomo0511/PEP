@@ -1,17 +1,27 @@
-.post-image-n{:style => "background-image: url(https://cdn.pixabay.com/photo/2016/03/09/09/14/books-1245690_1280.jpg);"}
-  .postTitle
-    %h3.page-name ■ユーザーページ
-    .user-post-list
-      = @user.nickname
-      の投稿一覧
-  - @posts.each do |post|
-    .post-box
-      .post-content
-        = link_to post.title, post_path(post.id), class: :post__title
-      .post-image{:style => "background-image: url(#{post.image});"}
-      .post-Contributor
-        投稿主 #{link_to post.user.nickname, user_path(post.user), class: "user-all-post"}
-      .post-date
-        投稿日時 #{post.created_at}
-.paginate
-  = paginate(@posts)
+.user-page
+  .user-page__upper-box
+    .user-page__upper-box__background-image
+      背景画像
+    .user-page__upper-box__profile
+      .user-page__upper-box__profile__image
+        画像
+      .user-page__upper-box__profile__content
+        .user-page__upper-box__profile__content__name
+          Dog
+        .user-page__upper-box__profile__content__text
+          初めまして、Dogです。よろしくお願いします。
+  .user-page__midle-box
+    .user-page__midle-box__details
+      .user-page__midle-box__details__to-follow
+        フォローする
+  .user-page__lower-box
+    %ul.user-page__lower-box__header
+      %li.post-image 投稿
+      %li.my-followers フォロワー
+      %li.my-follow フォロー
+    .user-page__lower-box__content
+      .user-page__lower-box__content__text
+        - @posts.each do |post|
+          .post-box
+            .post-content
+              = link_to post.title, post_path(post.id), class: :image_post
