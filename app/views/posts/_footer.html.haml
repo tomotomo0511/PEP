@@ -1,0 +1,15 @@
+.footer
+  .footer__content
+    %h2.footer-boxs
+      = link_to 'Dog', root_path, class: "footer-box"
+    %h2.footer-boxs
+      = link_to 'New article', posts_path, class: "footer-box"
+      - if user_signed_in?
+        %h2.footer-boxs
+          = link_to "My page", user_path(current_user), class: "footer-box"
+          = link_to 'New post', new_post_path, class: "footer-box"
+          = link_to 'Log out', destroy_user_session_path, method: :delete, class: "footer-box"
+      - else
+        %h2.footer-boxs
+          = link_to 'Sign up', new_user_registration_path, class: "footer-box"
+          = link_to 'Log in', new_user_session_path, class: "footer-box"
