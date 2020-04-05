@@ -1,16 +1,40 @@
-%body
-  .page-a
-    %h3.page-name ■最新投稿一覧ページ
-  - @posts.each do |post|
-    .content-a
-      .content1-a
-        .post-a
-          .post-image-a{:style => "background-image: url(#{post.image});"}
-          .post-box-a
-            .post-box-title-a
-              = link_to post.title, "/posts/#{post.id}"
-            %div{:clas => "post-box-under-a"}
-              .post-box-under-name-a
-                投稿者 : #{link_to post.user.nickname, user_path(post.user_id)}
-              .post-box-under-created_at-a
-                = post.created_at
+.article-page
+  .article-page__left
+    左
+  .article-page__right
+    右
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-# %body
+-#   .page-a
+-#     %h3.page-name ■最新投稿一覧ページ
+-#   - @posts.each do |post|
+-#     .content-a
+-#       .content1-a
+-#         .post-a
+-#           .post-image-a{:style => "background-image: url(#{post.image});"}
+-#           .post-box-a
+-#             .post-box-title-a
+-#               = link_to post.title, "/posts/#{post.id}"
+-#             %div{:clas => "post-box-under-a"}
+-#               .post-box-under-name-a
+-#                 投稿者 : #{link_to post.user.nickname, user_path(post.user_id)}
+-#               .post-box-under-created_at-a
+-#                 = post.created_at

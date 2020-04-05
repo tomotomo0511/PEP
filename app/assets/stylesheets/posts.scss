@@ -1,3 +1,15 @@
+.article-page {
+  background-color: black;
+  height: auto;
+  display: flex;
+  &__left {
+    color: white;
+  }
+  &__right {
+    color: white;
+  }
+}
+
 
 
 

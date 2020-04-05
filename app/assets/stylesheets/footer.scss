@@ -1,7 +1,9 @@
 .footer {
   background-color: black;
   height: 71px;
-  width: auto;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
   // border-bottom: solid 3px white;
   &__content {
     background-color: black;
