@@ -1,26 +1,23 @@
 .top-page {
   background-color: black;
-  height: 91vh;
+  height: 93vh;
   width: 100%;
-  // border: solid 1px white;
   position: relative;
   &__title {
     text-align: center;
     color: white;
     font-size: 130px;
-    // border: solid 1px white;
     margin: auto;
     .top-page-main-title {
       position: absolute;
       margin: 150px 0 0 800px;
       font-weight: bold;
-      // border: solid 1px white;
       @keyframes typing { from { width: 0; } }
       @keyframes caret { 50% { border-color: transparent; } }
       width: 3.2ch;
       border-right: .02em solid;
       overflow: hidden;
-      animation: typing 1.1s steps(3, end), caret .9s step-end infinite;
+      animation: typing 1s steps(3, end), caret .9s step-end infinite;
       &:hover {
         opacity: 0.6;
         color: goldenrod;

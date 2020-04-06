@@ -1,12 +1,46 @@
+.article-header {
+  background-color: black;
+  border: solid 1px gray;
+  height: 50px;
+  width: 100%;
+}
+
 .article-page {
   background-color: black;
-  height: auto;
+  height: 91vh;
+  width: 100%;
   display: flex;
   &__left {
-    color: white;
+    border: solid 1px gray;
+    height: auto;
+    width: 80%;
+    &__box {
+      height: 90vh;
+      width: 90%;
+      margin-left: auto;
+      background-color: white;
+      overflow: scroll;
+      display: flex;
+      &__contents {
+        width: 90%;
+        padding: 0 100px;
+        height: auto;
+        border: solid 1px black;
+        margin: auto;
+      }
+    }
   }
   &__right {
-    color: white;
+    border: solid 1px gray;
+    height: auto;
+    width: 20%;
+    &__box {
+      border: solid 1px white;
+      height: 90vh;
+      width: 80%;
+      background-color: white;
+
+    }
   }
 }
 
