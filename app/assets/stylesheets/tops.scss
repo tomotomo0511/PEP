@@ -19,7 +19,6 @@
       overflow: hidden;
       animation: typing 1s steps(3, end), caret .9s step-end infinite;
       &:hover {
-        opacity: 0.6;
         color: goldenrod;
       }
     }
@@ -33,7 +32,6 @@
         display: block;
         text-decoration: none;
         &:hover {
-          opacity: 0.6;
           color: goldenrod;
           font-weight: bold;
         }
@@ -43,7 +41,6 @@
         display: block;
         text-decoration: none;
         &:hover {
-          opacity: 0.6;
           color: goldenrod;
           font-weight: bold;
         }

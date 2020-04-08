@@ -1,6 +1,6 @@
 .article-header {
   background-color: black;
-  border: solid 1px gray;
+  // border: solid 1px white;
   height: 50px;
   width: 100%;
 }
@@ -11,69 +11,85 @@
   width: 100%;
   display: flex;
   &__left {
-    border: solid 1px gray;
+    // border: solid 1px white;
     height: auto;
     width: 80%;
     &__box {
-      height: 90vh;
+      height: 80vh;
       width: 90%;
       margin-left: auto;
       background-color: black;
-      border: solid 1px white;
+      // border: solid 1px white;
       overflow: scroll;
-      display: flex;
+      // display: flex;
       &__contents {
         background-color: black;
         width: 90%;
-        padding: 0 70px;
+        padding: 0 5px;
         height: auto;
-        border: solid 1px gray;
+        // border: solid 1px white;
         margin: auto;
         .post-content__header {
-          width: 500px;
           height: 50px;
-          // border: solid 1px white;
-          background-color: white;
+          background-color: black;
           &__box {
             // border: solid 1px white;
-            display: flex;
-            justify-content: space-between;
+            border-top: solid 1px lightgray;
+            line-height: 25px;
             &__user-name {
-              text-decoration: none;
-              display: block;
+              font-size: 12px;
+              font-weight: bold;
+            }
+            &__title {
+              font-size: 14px;
+              font-weight: bold;
+            }
+          }
+          .post-content__header {
+            text-decoration: none;
+            color: white;
+            margin-left: 30px;
+            &:hover {
+              color: goldenrod;
             }
           }
         }
         .post-content__image {
-          width: 500px;
-          height: 400px;
+          width: 280px;
+          height: 180px;
           // border: solid 1px white;
+          border-top: none;
+          border-bottom: none;
+          margin-left: 30px;
           &__box {
-            width: 500px;
-            height: 400px;
+            width: 280px;
+            height: 180px;
             // border: solid 1px white;
             background-size: cover;
             background-repeat: no-repeat;
           }
         }
         .post-content__footer {
-          width: 500px;
           height: 50px;
-          // border: solid 1px white;
+          border-bottom: solid 1px lightgray;
           &__box {
             color: white;
+            font-size: 12px;
+            line-height: 50px;
+            text-align: right;
+            margin-right: 30px;
           }
         }
       }
     }
   }
   &__right {
-    border: solid 1px gray;
+    // border: solid 1px white;
     height: auto;
     width: 20%;
-    border: solid 1px white;
+    // border: solid 1px white;
     &__box {
-      border: solid 1px white;
+      // border: solid 1px white;
       height: 90vh;
       width: 80%;
       background-color: black;

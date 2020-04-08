@@ -7,9 +7,9 @@
           .post-content__header
             .post-content__header__box
               .post-content__header__box__user-name
-                = link_to post.user.nickname, user_path(post.user_id)
+                = link_to post.user.nickname, user_path(post.user_id),class: "post-content__header" 
               .post-content__header__box__title
-                = link_to post.title, "/posts/#{post.id}"
+                = link_to post.title, "/posts/#{post.id}", class: "post-content__header"
           .post-content__image
             .post-content__image__box{:style => "background-image: url(#{post.image});"}
           .post-content__footer
