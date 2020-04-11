@@ -8,7 +8,18 @@
     background-size: cover;
     background-repeat: no-repeat;
     &__forms {
-
+      .form_title {
+        width: 50%;
+      }
+      .form_image {
+        width: 50%;
+      }
+      .form_text {
+        width: 50%;
+      }
+      .form_btn {
+        width: 50%;
+      }
     }
   }
 }
