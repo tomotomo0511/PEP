@@ -1,12 +1,11 @@
 .footer {
-  background-color: black;
+  // background-color: black;
   height: 60px;
   width: 100%;
   position: fixed;
   bottom: 0;
   border-top: solid 1px white;
   &__content {
-    background-color: black;
     height: 40px;
     display: flex;
     justify-content: space-between;

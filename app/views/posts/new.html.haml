@@ -1,5 +1,5 @@
 .new-post
-  .new-post__image{:style => "background-image: url(https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_1280.jpg);"}
+  .new-post__image{style: "background-image: url(https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_1280.jpg);"}
     .new-post__image__forms
       = form_with model: @post, class: :form, local: true do |form|
         = form.text_field :title, placeholder: :記事タイトル, class: :form_title
