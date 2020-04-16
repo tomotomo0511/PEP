@@ -1,40 +1,43 @@
 .show-post
   .show-post__image
+    .show-post__image__up
+    .show-post__image__content
+    .show-post__image__under
 
 
 
 
 
 
-    %h3.page-name ■投稿詳細ページ
-    .title-title タイトル
-    .details-title
-      = @post.title
-    .post-image-s= image_tag @post.image
-    .post-Contributor
-      投稿主 #{link_to @post.user.nickname, user_path(@post.user), class: "user-all-post"}
-    .details-text-title 投稿内容
-    .details
-      .details-text
-        = simple_format @post.content
-      .details-created_at
-        = @post.created_at
-    .comments-box
-      %h4 ＜コメント一覧＞
-      - if @comments
-        - @comments.each do |comment|
-          .comment-name
-            %strong= link_to comment.user.nickname, "/users/#{comment.user_id}"
-            = simple_format comment.text
-    .comment-box
-      - if current_user
-        = form_with(model: [@post, @comment], local: true) do |form|
-          = form.text_area :text, placeholder: :コメントを入力, class: :form__comment
-          = form.submit 'コメントを投稿する', class: :form__comment__btn
-      - else
-        %strong
-          %p コメントの投稿にはアカウント登録/ログインが必要です
-      .details-edit
-        - if user_signed_in? && current_user.id == @post.user_id
-          = link_to "編集する", edit_post_path(@post.id), class: "details-edit__1"
-          = link_to "削除する", post_path(@post.id), method: :delete, class: "details-delete"
+    -# %h3.page-name ■投稿詳細ページ
+    -# .title-title タイトル
+    -# .details-title
+    -#   = @post.title
+    -# .post-image-s= image_tag @post.image
+    -# .post-Contributor
+    -#   投稿主 #{link_to @post.user.nickname, user_path(@post.user), class: "user-all-post"}
+    -# .details-text-title 投稿内容
+    -# .details
+    -#   .details-text
+    -#     = simple_format @post.content
+    -#   .details-created_at
+    -#     = @post.created_at
+    -# .comments-box
+    -#   %h4 ＜コメント一覧＞
+    -#   - if @comments
+    -#     - @comments.each do |comment|
+    -#       .comment-name
+    -#         %strong= link_to comment.user.nickname, "/users/#{comment.user_id}"
+    -#         = simple_format comment.text
+    -# .comment-box
+    -#   - if current_user
+    -#     = form_with(model: [@post, @comment], local: true) do |form|
+    -#       = form.text_area :text, placeholder: :コメントを入力, class: :form__comment
+    -#       = form.submit 'コメントを投稿する', class: :form__comment__btn
+    -#   - else
+    -#     %strong
+    -#       %p コメントの投稿にはアカウント登録/ログインが必要です
+    -#   .details-edit
+    -#     - if user_signed_in? && current_user.id == @post.user_id
+    -#       = link_to "編集する", edit_post_path(@post.id), class: "details-edit__1"
+    -#       = link_to "削除する", post_path(@post.id), method: :delete, class: "details-delete"
