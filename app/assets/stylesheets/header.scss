@@ -1,24 +1,31 @@
 .header {
-  background-color: black;
-  height: 70px;
-  width: auto;
+  // background-color: black;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: solid 1px white;
   &__content {
-    background-color: black;
-    padding: 10px;
-    width: 100%;
+    // background-color: black;
     height: 40px;
     display: flex;
     justify-content: space-between;
-    border: solid 1px white;
+    // border: solid 1px white;
     .header-boxs {
-      border: solid 1px white;
+      // border: solid 1px white;
       text-align: center;
       margin: auto 0;
       width: 100%;
+      padding: 15px 0 0 0;
       .header-box {
         color: white;
         margin: auto 10px;
-        border: solid 1px white;
+        text-decoration: none;
+        // border: solid 1px white;
+        &:hover {
+          color: goldenrod;
+          font-weight: bold;
+        }
       }
     }
   }
