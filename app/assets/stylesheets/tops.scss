@@ -1,6 +1,6 @@
 .top-page {
-  background-color: black;
-  height: 100vh;
+  background-color: white;
+  height: 92vh;
   width: 100%;
   position: relative;
   &__title {
@@ -8,25 +8,22 @@
     color: white;
     font-size: 130px;
     margin: auto;
+    position: absolute;
+    z-index: 1;
     .top-page-main-title {
       position: absolute;
-      margin: 150px 0 0 800px;
+      margin: 270px 0 0 70px;
       font-weight: bold;
       @keyframes typing { from { width: 0; } }
       @keyframes caret { 50% { border-color: transparent; } }
-      width: 3.2ch;
+      width: 2.9ch;
       border-right: .02em solid;
       overflow: hidden;
-      animation: typing 1s steps(3, end), caret .9s step-end infinite;
-      &:hover {
-        color: goldenrod;
-      }
+      animation: typing 800ms steps(3, end), caret .9s step-end infinite;
     }
     &__texts {
       font-size: 20px;
       text-align: center;
-      position: absolute;
-      margin: 500px 0 0 1000px;
       .top-welcome-text {
         color: white;
         display: block;
@@ -48,10 +45,134 @@
     }
   }
   &__image {
+    // border: solid 1px white;
+    margin-top: 250px;
+    position: absolute;
     width: 100%;
-    height: 100%;
+    height: 34%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_1280.jpg);
+    // background-image: url(https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg);
+    // background-image: url(https://cdn.pixabay.com/photo/2015/09/05/21/52/macbook-925595_1280.jpg);
+    background-position: center;
+    animation-delay:10s;
+    @keyframes album {
+      0% {
+        opacity: 0;
+      }
+      
+      12.5% {
+        opacity: 1;
+      }
+
+      20.5% {
+        opacity: 1;
+      }
+
+      30.5% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+  &__image-first {
+    // border: solid 1px white;
+    margin-top: 250px;
+    position: absolute;
+    width: 100%;
+    height: 34%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-image: url(https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg);
+    // background-image: url(https://cdn.pixabay.com/photo/2017/01/03/11/33/pizza-1949183_1280.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg);
+    background-position: center;
+    animation-name: album;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+  }
+  &__image-top {
+    // border: solid 1px white;
+    position: absolute;
+    width: 100%;
+    height: 34%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-image: url(https://cdn.pixabay.com/photo/2015/07/31/14/59/creative-869200_1280.jpg);
+    // background-image: url(https://cdn.pixabay.com/photo/2015/09/05/21/52/macbook-925595_1280.jpg);
+    animation-delay:10s;
+    // animation-name: album;
+    // animation-duration: 10s;
+    // animation-iteration-count: infinite;
+    // opacity: 0;
+  }
+  &__image-top-first {
+    // border: solid 1px white;
+    position: absolute;
+    width: 100%;
+    height: 34%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-image: url(https://cdn.pixabay.com/photo/2015/07/31/14/59/creative-869200_1280.jpg);
+    // background-image: url(https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2015/07/31/14/59/creative-869200_1280.jpg);
+    background-position: center;
+    animation-name: album;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    // animation-delay:1s;
+  }
+  &__image-bottom {
+    // border: solid 1px white;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 31%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-image: url(https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_1280.jpg);
+    // background-image: url(https://cdn.pixabay.com/photo/2015/09/05/21/52/macbook-925595_1280.jpg);
+    background-position: center;
+    animation-delay:10s;
+  }
+  &__image-bottom-first {
+    // border: solid 1px white;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 31%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-image: url(https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_1280.jpg);
+    // background-image: url(https://cdn.pixabay.com/photo/2016/04/25/06/39/food-1351287_1280.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_1280.jpg);
+    background-position: center;
+    animation-name: album;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+  }
+  &__image-top-second {
+    // border: solid 1px white;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 31%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-image: url(https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_1280.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2016/04/25/06/39/food-1351287_1280.jpg);
+    // background-image: url(https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_1280.jpg);
+    background-position: center;
+    animation-name: album;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    opacity: 0;
   }
 }
+

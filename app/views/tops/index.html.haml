@@ -1,7 +1,10 @@
 .top-page
   .top-page__image
-    .top-page__title
-      %h1.top-page-main-title Dog
+  .top-page__image-first
+  .top-page__image-second
+  .top-page__image-third
+  .top-page__title
+    %h1.top-page-main-title dog
     .top-page__title__texts
       - if user_signed_in?
         -# = link_to 'Welcome to Dog', root_path, class: "top-welcome-text"
@@ -11,5 +14,11 @@
       - else
         -# = link_to 'Sign up', new_user_registration_path, class: "top-text"
         -# = link_to 'Log in', new_user_session_path, class: "top-text"
-
-  
+  .top-page__image-top
+  .top-page__image-top-first
+  .top-page__image-top-second
+  .top-page__image-top-third
+  .top-page__image-bottom
+  .top-page__image-bottom-first
+  .top-page__image-bottom-second
+  .top-page__image-bottom-third

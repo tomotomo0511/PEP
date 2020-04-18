@@ -10,14 +10,14 @@
     .header
       .header__content
         %h2.header-boxs
-          = link_to 'Dog', root_path, class: "header-box"
+          = link_to 'dog', root_path, class: "header-box-dog"
         %h2.header-boxs
-          = link_to 'New article', posts_path, class: "header-box"
+          = link_to '最新記事一覧', posts_path, class: "header-box"
           - if user_signed_in?
             %h2.header-boxs
-              = link_to "My page", user_path(current_user), class: "header-box"
-              = link_to 'New post', new_post_path, class: "header-box"
-              = link_to 'Log out', destroy_user_session_path, method: :delete, class: "header-box"
+              = link_to "プロフィール", user_path(current_user), class: "header-box"
+              = link_to '投稿', new_post_path, class: "header-box"
+              -# = link_to 'Log out', destroy_user_session_path, method: :delete, class: "header-box"
           - else
             %h2.header-boxs
               = link_to 'Sign up', new_user_registration_path, class: "header-box"
