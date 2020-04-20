@@ -1,93 +1,93 @@
 .user-page {
- border: solid 1px white; 
- background-color: #16160e;
+ border: solid 1px black; 
+ background-color: white;
  height: 92vh;
  width: auto;
  &__upper-box {
-   border: solid 1px white;
+   border: solid 1px black;
    height: 230px;
    &__background-image {
-     border: solid 1px white;
+     border: solid 1px black;
      height: 100px;
-     color: white;
+     color: black;
    }
    &__profile {
-    border: solid 1px white;
+    border: solid 1px black;
     height: 100px;
     display: flex;
     &__image {
-      border: solid 1px white;
+      border: solid 1px black;
       height: 100px;
-      color: white;
+      color: black;
     }
     &__content {
-      border: solid 1px white;
+      border: solid 1px black;
       height: 100px;
       &__name {
-        border: solid 1px white;
+        border: solid 1px black;
         height: 30px;
-        color: white;
+        color: black;
       }
       &__text {
-        border: solid 1px white;
+        border: solid 1px black;
         height: 60px;
-        color: white;
+        color: black;
       }
     }
    }
  }
  &__midle-box {
-  border: solid 1px white;
+  border: solid 1px black;
   height: 60px;
   &__details {
-    border: solid 1px white;
+    border: solid 1px black;
     height: 40px;
     &__to-follow {
-      border: solid 1px white;
+      border: solid 1px black;
       height: 30px;
       width: 100px;
-      color: white;
+      color: black;
     }
   }
  }
  &__lower-box {
-  border: solid 1px white;
+  border: solid 1px black;
   height: 380px;
   &__header {
-    border: solid 1px white;
+    border: solid 1px black;
     height: 80px;
     width: 1400px;
     display: flex;
     justify-content: space-around;
     .post-image {
-      color: white;
-      border: solid 1px white;
+      color: black;
+      border: solid 1px black;
       height: 30px;
       padding: 20px 100px;
     }
     .my-followers {
-      color: white;
-      border: solid 1px white;
+      color: black;
+      border: solid 1px black;
       height: 30px;
       padding: 20px 100px;
     }
     .my-follow {
-      color: white;
-      border: solid 1px white;
+      color: black;
+      border: solid 1px black;
       height: 30px;
       padding: 20px 100px;
     }
   }
   &__content {
-    border: solid 1px white;
+    border: solid 1px black;
     height: 290px;
     width: 1400px;
     &__text {
       display: flex;
       justify-content: space-around;
-      color: white;
+      color: black;
       .image_post {
-        color: white;
+        color: black;
       }
     }
   }

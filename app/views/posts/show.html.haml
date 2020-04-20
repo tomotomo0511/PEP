@@ -1,8 +1,19 @@
 .show-post
-  .show-post__image
-    .show-post__image__up
-    .show-post__image__content
-    .show-post__image__under
+  .show-post__main
+    .show-post__main__image
+      .show-post__main__image__box{:style => "background-image: url(#{@post.image});"}
+    .show-post__main__title
+      = @post.title
+    .show-post__main__user-name
+      = @post.user.nickname
+    .show-post__main__created-at
+      = @post.created_at
+    .show-post__main__text
+      = simple_format(@post.content)
+    .show-post__main__show-comment
+      コメント一覧
+    .show-post__main__comment-form
+      コメント入力
 
 
 

@@ -1,26 +1,25 @@
--# .article-header
 .article-page
-  .article-page__image
-    .article-page__image__left
-      .article-page__image__left__box
-        - @posts.each do |post|
-          .article-page__image__left__box__contents
-            .post-content__header
-              .post-content__header__box
-                .post-content__header__box__title
-                  = link_to post.title, "/posts/#{post.id}", class: "post-content__header"
-                .post-content__header__box__user-name
-                  = link_to post.user.nickname, user_path(post.user_id),class: "post-content__header" 
-            .post-content__image
-              .post-content__image__box{:style => "background-image: url(#{post.image});"}
-            .post-content__footer
-              -# .post-content__footer__user-name
-              -#   = link_to post.user.nickname, user_path(post.user_id),class: "post-content__footer" 
-              .post-content__footer__created-at
-                = post.created_at
+  .article-page__left
+    .article-page__left__box
+      - @posts.each do |post|
+        .article-page__left__box__contents
+          -# .post-content__header
+          .post-content__image
+            .post-content__image__box{:style => "background-image: url(#{post.image});"}
+          .post-content__footer
+            .post-content__footer__box
+              .post-content__footer__box__title
+                = link_to post.title, "/posts/#{post.id}", class: "post-footer-link"
+              .post-content__footer__box__user-name
+                = link_to post.user.nickname, user_path(post.user_id),class: "post-footer-link" 
+            .post-content__footer__box__text
+              = post.content
+            .post-content__footer__created-at
+              = post.created_at
 
-    -# .article-page__image__right
-    -#   .article-page__image__right__box
+    -# .article-page__right
+    -#   .article-page__right__box
+  
 
 
 
