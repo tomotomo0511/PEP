@@ -1,14 +1,19 @@
 .footer {
-  // background-color: black;
-  height: 60px;
+  height: 80px;
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  border-top: solid 1px white;
+  // position: fixed;
+  // bottom: 0;
+  // border-top: solid 1px white;
+  background-color: white;
   &__content {
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
+    // height: 40px;
+    // width: 100%;
+    // border-top: solid 1px white;
+    color: gray;
+    text-align: center;
+    line-height: 80px;
+    // display: flex;
+    // justify-content: space-between;
     .footer-boxs {
       text-align: center;
       margin: auto 0;
