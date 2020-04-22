@@ -79,3 +79,9 @@ gem 'font-awesome-rails'
 gem 'kaminari'
 
 gem 'haml-rails'
+
+gem 'carrierwave'
+
+gem 'mini_magick'
+
+

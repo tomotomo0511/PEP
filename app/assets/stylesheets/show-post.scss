@@ -41,6 +41,14 @@
       width: 90%;
       // border: solid 1px black;
       margin: auto;
+      .show-user-link {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover {
+          color: gray;
+        }
+      }
     }
     &__created-at {
       height: auto;

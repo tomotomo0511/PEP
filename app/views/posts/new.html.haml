@@ -1,8 +1,8 @@
 .new-post
-  .new-post__image
-    .new-post__image__forms
+  .new-post__main
+    .new-post__main__forms
       = form_with model: @post, class: :form, local: true do |form|
+        = form.file_field :image, placeholder: :画像URL, class: :form_image
         = form.text_field :title, placeholder: :記事タイトル, class: :form_title
-        = form.text_field :image, placeholder: :画像URL, class: :form_image
         = form.text_area :content, placeholder: :記事本文, class: :form_text
         = form.submit '投稿する', class: :form_btn
