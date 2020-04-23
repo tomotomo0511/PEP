@@ -1,27 +1,31 @@
 .user-page
-  .user-page__upper-box
-    .user-page__upper-box__background-image
-      背景画像
-    .user-page__upper-box__profile
-      .user-page__upper-box__profile__image
-        画像
-      .user-page__upper-box__profile__content
-        .user-page__upper-box__profile__content__name
+  .user-page__main
+    .user-page__main__background-image
+
+    .user-page__main__profile
+      -# .user-page__upper-box__profile__image
+      -#   画像
+      .user-page__main__profile__content
+        .user-page__main__profile__content__name
           Dog
-        .user-page__upper-box__profile__content__text
-          初めまして、Dogです。よろしくお願いします。
-  .user-page__midle-box
-    .user-page__midle-box__details
-      .user-page__midle-box__details__to-follow
-        フォローする
-  .user-page__lower-box
-    %ul.user-page__lower-box__header
-      %li.post-image 投稿
-      %li.my-followers フォロワー
-      %li.my-follow フォロー
-    .user-page__lower-box__content
-      .user-page__lower-box__content__text
-        - @posts.each do |post|
-          .post-box
-            .post-content
-              = link_to post.title, post_path(post.id), class: :image_post
+        .user-page__main__profile__content__text
+          今年(2020年)で25歳になる無職 学校の授業、勉強が苦手で、小中高の授業中は落書きばかり。家に帰れば大好きなゲームばかり。 競争社会で圧倒的に負け組を経験、努力の仕方すらわからない偏差値20くらいの低スペック人間。 現在はフロントエンドエンジニアを目指して勉強&就職活動中
+    .user-page__main__posts
+      .user-page__main__posts__box
+
+
+
+  -#   .user-page__midle-box__details
+  -#     .user-page__midle-box__details__to-follow
+  -#       フォローする
+  -# .user-page__lower-box
+  -#   %ul.user-page__lower-box__header
+  -#     %li.post-image 投稿
+  -#     %li.my-followers フォロワー
+  -#     %li.my-follow フォロー
+  -#   .user-page__lower-box__content
+  -#     .user-page__lower-box__content__text
+  -#       - @posts.each do |post|
+  -#         .post-box
+  -#           .post-content
+  -#             = link_to post.title, post_path(post.id), class: :image_post
