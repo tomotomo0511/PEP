@@ -12,6 +12,12 @@
           今年(2020年)で25歳になる無職 学校の授業、勉強が苦手で、小中高の授業中は落書きばかり。家に帰れば大好きなゲームばかり。 競争社会で圧倒的に負け組を経験、努力の仕方すらわからない偏差値20くらいの低スペック人間。 現在はフロントエンドエンジニアを目指して勉強&就職活動中
     .user-page__main__posts
       .user-page__main__posts__box
+        - @posts.each do |post|
+          .user-page__main__posts__box__content
+            .user-page__main__posts__box__content__background
+              .user-page__main__posts__box__content__background__image{:style => "background-image: url(#{post.image});"}
+            .user-page__main__posts__box__content__title
+              = link_to post.title, post_path(post.id), class: :image_post
 
 
 
