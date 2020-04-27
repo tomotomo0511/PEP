@@ -71,17 +71,17 @@
       white-space: pre-wrap;
       word-wrap: break-word;
     }
-    &__show-comment {
-      height: auto;
-      width: 90%;
-      // border: solid 1px black;
-      margin: auto;
-    }
-    &__comment-form {
-      height: 10%;
-      width: 90%;
-      // border: solid 1px black;
-      margin: auto;
-    }
+  }
+  &__show-comment {
+    height: auto;
+    width: 90%;
+    // border: solid 1px black;
+    margin: auto;
+  }
+  &__comment-form {
+    height: 10%;
+    width: 90%;
+    // border: solid 1px black;
+    margin: auto;
   }
 }

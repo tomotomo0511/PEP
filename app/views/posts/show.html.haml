@@ -10,10 +10,22 @@
       = @post.created_at
     .show-post__main__text
       = simple_format(@post.content)
-    .show-post__main__show-comment
-      コメント一覧
-    .show-post__main__comment-form
-      コメント入力
+  .show-post__comment
+    コメント一覧
+    - if @comments
+      - @comments.each do |comment|
+        .comment-name
+          %strong= link_to comment.user.nickname, "/users/#{comment.user_id}"
+          = simple_format comment.text
+  .show-post__comment-form
+    コメント入力
+    - if current_user
+      = form_with(model: [@post, @comment], local: true) do |form|
+        = form.text_area :text, placeholder: :コメントを入力, class: :form__comment
+        = form.submit 'コメントを投稿する', class: :form__comment__btn
+    - else
+      %strong
+        %p コメントの投稿にはアカウント登録/ログインが必要です
 
 
 
@@ -48,7 +60,7 @@
     -#   - else
     -#     %strong
     -#       %p コメントの投稿にはアカウント登録/ログインが必要です
-    -#   .details-edit
-    -#     - if user_signed_in? && current_user.id == @post.user_id
-    -#       = link_to "編集する", edit_post_path(@post.id), class: "details-edit__1"
-    -#       = link_to "削除する", post_path(@post.id), method: :delete, class: "details-delete"
+      .details-edit
+        - if user_signed_in? && current_user.id == @post.user_id
+          = link_to "編集する", edit_post_path(@post.id), class: "details-edit__1"
+          = link_to "削除する", post_path(@post.id), method: :delete, class: "details-delete"
