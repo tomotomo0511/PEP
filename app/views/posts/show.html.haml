@@ -11,21 +11,21 @@
     .show-post__main__text
       = simple_format(@post.content)
   .show-post__comment
-    コメント一覧
     - if @comments
       - @comments.each do |comment|
-        .comment-name
-          %strong= link_to comment.user.nickname, "/users/#{comment.user_id}"
-          = simple_format comment.text
-  .show-post__comment-form
-    コメント入力
-    - if current_user
-      = form_with(model: [@post, @comment], local: true) do |form|
-        = form.text_area :text, placeholder: :コメントを入力, class: :form__comment
-        = form.submit 'コメントを投稿する', class: :form__comment__btn
-    - else
-      %strong
-        %p コメントの投稿にはアカウント登録/ログインが必要です
+        .show-post__comment__name
+          %strong= link_to comment.user.nickname, "/users/#{comment.user_id}",class: "show-comment-name"
+          = simple_format comment.text,class: "show-comment-text"
+    .show-post__comment-form
+      - if current_user
+        = form_with(model: [@post, @comment], local: true) do |form|
+          .show-post__comment-form__up
+            = form.text_area :text, placeholder: :コメントを入力, class: "form-comment"
+          .show-post__comment-form__down
+            = form.submit '投稿確定', class: "form-comment-btn"
+      - else
+        %strong
+          %p コメントの投稿にはアカウント登録/ログインが必要です
 
 
 
