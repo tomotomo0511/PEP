@@ -146,16 +146,21 @@
       width: 86%;
       height: auto;
       // background-color: maroon;
+      // margin-left: 385px;
       margin: auto;
       .form-comment-btn {
-        width: 90px;
-        height: 35px;
+        width: 100px;
+        height: 27px;
         // border: solid 1px black;
-        border-radius: 10px;
-        margin: 20px 0 0 325px;
+        border-radius: 5px;
+        margin: 20px 0 0 320px;
         border: none;
+        background-color: #191919;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
         &:hover {
-          
+          background-color: gray;
         }
       }
     }
