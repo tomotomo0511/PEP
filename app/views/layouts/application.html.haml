@@ -20,8 +20,8 @@
               -# = link_to 'Log out', destroy_user_session_path, method: :delete, class: "header-box"
           - else
             %h2.header-boxs
-              = link_to 'Sign up', new_user_registration_path, class: "header-box"
-              = link_to 'Log in', new_user_session_path, class: "header-box"
+              = link_to '新規登録', new_user_registration_path, class: "header-box"
+              = link_to 'ログイン', new_user_session_path, class: "header-box"
     = yield
     .footer
       .footer__content ©︎PEP 2020

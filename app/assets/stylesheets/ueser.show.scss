@@ -44,7 +44,18 @@
       color: #16160e;
       font-size: 14px;
       margin: auto;
+      margin-left: 85px;
       padding-bottom: 20px;
+      .user-logout {
+        text-decoration: none;
+        color: white;
+        background-color: #191919;
+        padding: 10px;
+        border-radius: 10px;
+        &:hover {
+          background-color: gray;
+        }
+      }
     }
   }
  }
