@@ -165,4 +165,38 @@
       }
     }
   }
+  &__article-edit-delete {
+    // border: solid 1px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 30px;
+    .article-edit {
+    width: 11.5%;
+      text-decoration: none;
+      color: white;
+      background-color: #191919;
+      border-radius: 5px;
+      padding: 10px;
+      font-weight: bold;
+      display: block;
+      &:hover {
+        background-color: gray;
+      }
+    }
+    .article-delete {
+      width: 11.5%;
+      text-decoration: none;
+      color: white;
+      background-color: red;
+      border-radius: 5px;
+      padding: 10px;
+      font-weight: bold;
+      display: block;
+      &:hover {
+        background-color: lightcoral;
+      }
+    }
+  }
 }

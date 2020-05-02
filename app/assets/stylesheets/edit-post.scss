@@ -1,0 +1,53 @@
+.post-edit {
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+  padding: 100px 0;
+  &__main {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px 15px;
+    &__forms {
+      height: 100%;
+      text-align: center;
+      line-height: 150px;
+      .form_image {
+        width: 100%;
+        height: 420px;
+        border: dashed 1px gray;
+        border-radius: 5px;
+      }
+      .form_title {
+        width: 90%;
+        height: auto;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 25px 0; 
+        border: dashed 1px gray;
+        border-radius: 5px;
+      }
+      .form_text {
+        width: 90%;
+        height: 500px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        border: dashed 1px gray;
+        border-radius: 5px;
+      }
+      .form_btn {
+        width: 15%;
+        background-color: #191919;
+        color: white;
+        padding: 10px 0px ;
+        border-radius: 5px;
+        font-weight: bold;
+        &:hover {
+          background-color: gray;
+        }
+      }
+    }
+  }
+}
