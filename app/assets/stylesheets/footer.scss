@@ -33,3 +33,42 @@
     }
   }
 }
+
+@media (max-width: 480px){
+  .footer {
+    height: 40px;
+    width: 100%;
+    // position: fixed;
+    // bottom: 0;
+    // border-top: solid 1px white;
+    // border: solid 1px black;
+    background-color: white;
+    &__content {
+      height: 40px;
+      width: 100%;
+      // border-top: solid 1px white;
+      // border: solid 1px black;
+      color: gray;
+      text-align: center;
+      line-height: 40px;
+      font-size: 12px;
+      // display: flex;
+      // justify-content: space-between;
+      .footer-boxs {
+        text-align: center;
+        margin: auto 0;
+        width: 100%;
+        padding: 15px 0 0 0;
+        .footer-box {
+          color: white;
+          margin: auto 10px;
+          text-decoration: none;
+          &:hover {
+            color: goldenrod;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
