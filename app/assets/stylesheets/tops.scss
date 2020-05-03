@@ -3,48 +3,45 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  &__title {
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    margin: auto;
-    position: absolute;
-    z-index: 1;
-    .top-page-main-title {
-      position: absolute;
-      margin: 270px 0 0 50px;
-      font-weight: bold;
-      @keyframes typing { from { width: 0; } }
-      @keyframes caret { 50% { border-color: transparent; } }
-      width: 3.9ch;
-      border-right: .02em solid;
-      overflow: hidden;
-      animation: typing 800ms steps(3, end), caret .9s step-end infinite;
-      text-shadow: black 2px 2px 6px;
-    }
-    &__texts {
-      font-size: 20px;
-      text-align: center;
-      .top-welcome-text {
-        color: white;
-        display: block;
-        text-decoration: none;
-        &:hover {
-          color: goldenrod;
-          font-weight: bold;
-        }
-      }
-      .top-article-text {
-        color: white;
-        display: block;
-        text-decoration: none;
-        &:hover {
-          color: goldenrod;
-          font-weight: bold;
-        }
-      }
-    }
-  }
+  // &__title {
+  //   color: white;
+  //   font-size: 30px;
+  //   position: absolute;
+  //   .top-page-main-title {
+  //     // transform: translate(50%, 600%);
+  //     margin: 270px 0 0 50px;
+  //     font-weight: bold;
+  //     @keyframes typing { from { width: 0; } }
+  //     @keyframes caret { 50% { border-color: transparent; } }
+  //     width: 3ch;
+  //     border-right: .02em solid;
+  //     overflow: hidden;
+  //     animation: typing 800ms steps(3, end), caret .9s step-end infinite;
+  //     text-shadow: black 2px 2px 6px;
+  //   }
+  //   &__texts {
+  //     font-size: 20px;
+  //     text-align: center;
+  //     .top-welcome-text {
+  //       color: white;
+  //       display: block;
+  //       text-decoration: none;
+  //       &:hover {
+  //         color: goldenrod;
+  //         font-weight: bold;
+  //       }
+  //     }
+  //     .top-article-text {
+  //       color: white;
+  //       display: block;
+  //       text-decoration: none;
+  //       &:hover {
+  //         color: goldenrod;
+  //         font-weight: bold;
+  //       }
+  //     }
+  //   }
+  // }
   &__image {
     // border: solid 1px white;
     // margin-top: 250px;
@@ -97,6 +94,23 @@
         opacity: 0;
       }
     }
+    &__title {
+      color: white;
+      font-size: 15px;
+      // position: absolute;
+      .top-page-main-title {
+        // transform: translate(50%, 100%);
+        margin: 80px 0 0 10px;
+        font-weight: bold;
+        // @keyframes typing { from { width: 0; } }
+        // @keyframes caret { 50% { border-color: transparent; } }
+        // width: 3ch;
+        // border-right: .02em solid;
+        // overflow: hidden;
+        // animation: typing 800ms steps(3, end), caret .9s step-end infinite;
+        text-shadow: black 3px 3px 7px;
+      }
+    }
   }
   &__image-first {
     // border: solid 1px white;
@@ -123,7 +137,7 @@
     width: 100%;
     height: 34.2%;
     background-size: cover;
-    background-image: url(https://cdn.pixabay.com/photo/2017/06/16/07/00/breakfast-2408034_1280.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2019/12/18/10/15/roast-beef-4703583_1280.jpg);
     background-position: 100% 50%;
     animation-name: album;
     animation-duration: 13s;
@@ -139,7 +153,7 @@
     width: 100%;
     height: 34.2%;
     background-size: cover;
-    background-image: url(https://cdn.pixabay.com/photo/2016/08/05/14/48/fishing-1572408_1280.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/09/10/37/light-bulb-1246043_1280.jpg);
     // 釣竿↑
     background-position: 100% 45%;
     animation-name: album;
@@ -156,7 +170,7 @@
     width: 100%;
     height: 34.2%;
     background-size: cover;
-    background-image: url(https://cdn.pixabay.com/photo/2015/04/20/17/39/man-731900_1280.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2014/09/13/21/40/newspapers-444449_1280.jpg);
     // 登山？↑
     background-position: 100% 63%;
     animation-name: album;
@@ -210,7 +224,7 @@
     width: 100%;
     height: 33%;
     background-size: cover;
-    background-image: url(https://cdn.pixabay.com/photo/2020/04/13/10/48/coffee-5037804_1280.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2015/03/26/09/43/living-room-690174_1280.jpg);
     background-position: 100% 82%;
     animation-name: album;
     animation-duration: 13s;
@@ -224,7 +238,7 @@
     width: 100%;
     height: 33%;
     background-size: cover;
-    background-image: url(https://cdn.pixabay.com/photo/2019/01/24/09/37/shoes-3952048_1280.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/01/22/16/smiley-1876329_1280.jpg);
     background-position: 100% 20%;
     animation-name: album;
     animation-duration: 13s;
@@ -238,7 +252,7 @@
     width: 100%;
     height: 33%;
     background-size: cover;
-    background-image: url(https://cdn.pixabay.com/photo/2020/02/04/10/42/camping-4817872_1280.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/27/19/32/blur-1283865_1280.jpg);
     background-position: 100% 70%;
     animation-name: album;
     animation-duration: 13s;
@@ -252,7 +266,7 @@
     width: 100%;
     height: 33%;
     background-size: cover;
-    background-image: url(https://cdn.pixabay.com/photo/2016/11/29/08/58/art-1868562_1280.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/30/17/27/cat-1941089_1280.jpg);
     background-position: 100% 40%;
     animation-name: album;
     animation-duration: 15s;
@@ -290,7 +304,7 @@
     width: 100%;
     height: 32%;
     background-size: cover;
-    background-image: url(https://cdn.pixabay.com/photo/2019/04/30/17/58/restaurant-4169158_1280.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2016/04/15/14/07/sunset-1331088_1280.jpg);
     background-position: 100% 45%;
     animation-name: album;
     animation-duration: 13s;
@@ -305,7 +319,7 @@
     width: 100%;
     height: 32%;
     background-size: cover;
-    background-image: url(https://cdn.pixabay.com/photo/2013/11/28/10/03/golfing-219993_1280.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_1280.jpg);
     background-position: 100% 60%;
     animation-name: album;
     animation-duration: 13s;

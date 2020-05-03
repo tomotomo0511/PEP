@@ -1,18 +1,22 @@
 .top-page
-  .top-page__image-top
-  .top-page__image-top-first
-  .top-page__image-top-second
-  .top-page__image-top-third
-  .top-page__image-top-fourth
-  .top-page__image-top-fifth
   .top-page__image
   .top-page__image-first
+    .top-page__image__title
+      %h2.top-page-main-title 自由に記事を書こう
   .top-page__image-second
+    .top-page__image__title
+      %h2.top-page-main-title グルメ
   .top-page__image-third
+    .top-page__image__title
+      %h2.top-page-main-title 気づき、発見
   .top-page__image-fourth
+    .top-page__image__title
+      %h2.top-page-main-title ニュース
   .top-page__image-fifth
-  .top-page__title
-    %h1.top-page-main-title PEP
+    .top-page__image__title
+      %h2.top-page-main-title おうち時間
+  -# .top-page__title
+    -# %h1.top-page-main-title PEP
     .top-page__title__texts
       - if user_signed_in?
         -# = link_to 'Welcome to Dog', root_path, class: "top-welcome-text"
@@ -22,9 +26,36 @@
       - else
         -# = link_to 'Sign up', new_user_registration_path, class: "top-text"
         -# = link_to 'Log in', new_user_session_path, class: "top-text"
+  .top-page__image-top
+  .top-page__image-top-first
+    .top-page__image__title
+      %h2.top-page-main-title 写真を添えて
+  .top-page__image-top-second
+    .top-page__image__title
+      %h2.top-page-main-title 日常
+  .top-page__image-top-third
+    .top-page__image__title
+      %h2.top-page-main-title ネタ
+  .top-page__image-top-fourth
+    .top-page__image__title
+      %h2.top-page-main-title 知識
+  .top-page__image-top-fifth
+    .top-page__image__title
+      %h2.top-page-main-title 癒し
+      
   .top-page__image-bottom
   .top-page__image-bottom-first
+    .top-page__image__title
+      %h2.top-page-main-title 閲覧だけでもOK
   .top-page__image-bottom-second
+    .top-page__image__title
+      %h2.top-page-main-title 思い出
   .top-page__image-bottom-third
+    .top-page__image__title
+      %h2.top-page-main-title 運動
   .top-page__image-bottom-fourth
+    .top-page__image__title
+      %h2.top-page-main-title 趣味
   .top-page__image-bottom-fifth
+    .top-page__image__title
+      %h2.top-page-main-title とっておきの一枚
