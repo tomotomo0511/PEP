@@ -16,7 +16,7 @@
       font-weight: bold;
       @keyframes typing { from { width: 0; } }
       @keyframes caret { 50% { border-color: transparent; } }
-      width: 3.1ch;
+      width: 3.9ch;
       border-right: .02em solid;
       overflow: hidden;
       animation: typing 800ms steps(3, end), caret .9s step-end infinite;
