@@ -55,14 +55,14 @@
             display: flex;
             justify-content: space-between;
             &__user-name {
-              font-size: 14px;
+              font-size: 10px;
               font-weight: bold;
               margin-top: 15px;
               // border: solid 1px black;
               margin-left: 10px;
             }
             &__title {
-              font-size: 16px;
+              font-size: 12px;
               font-weight: bold;
               margin-top: 15px;
               overflow: hidden;
@@ -70,7 +70,7 @@
               // border: solid 1px black;
             }
             &__text {
-              font-size: 14px;
+              font-size: 10px;
               font-weight: bold;
               overflow: hidden;
               display: -webkit-box;
@@ -92,7 +92,7 @@
           }
           &__created-at {
             color: gray;
-            font-size: 12px;
+            font-size: 10px;
             text-align: right;
             margin-right: 0px;
             // border: solid 1px black;
