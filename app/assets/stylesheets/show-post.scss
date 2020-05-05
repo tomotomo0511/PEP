@@ -169,9 +169,6 @@
       }
     }
   }
-
-
-
   &__article-edit-delete {
     // border: solid 1px;
     width: 80%;
@@ -209,6 +206,25 @@
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 480px){
@@ -362,8 +378,8 @@
         width: 86%;
         height: auto;
         // background-color: maroon;
-        // margin-left: 385px;
-        margin: auto;
+        margin-left: 25px;
+        // margin: auto;
         .form-comment-btn {
           width: 100px;
           height: 27px;
