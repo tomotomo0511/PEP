@@ -7,7 +7,7 @@
     .show-post__main__user-name
       = link_to @post.user.nickname, user_path(@post.user_id),class: "show-user-link"
     .show-post__main__created-at
-      = @post.created_at
+      = @post.created_at.strftime("%Y-%m-%d %H:%M")
     .show-post__main__text
       = simple_format(@post.content)
   .show-post__comment
@@ -18,7 +18,7 @@
           .show-post__comment__index__name
             = link_to comment.user.nickname, "/users/#{comment.user_id}",class: "show-comment-name"
           .show-post__comment__index__created-at
-            = comment.created_at
+            = comment.created_at.strftime("%Y-%m-%d %H:%M")
           .show-post__comment__index__text
             = simple_format comment.text,class: "show-comment-text"
     .show-post__comment-form
