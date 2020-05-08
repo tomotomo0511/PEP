@@ -4,7 +4,7 @@
     %h4
       メールアドレスとパスワードを入力してください。
       %br>/
-      会員登録に必要なメールが入力したアドレスへ送信されます
+      登録したメールアドレスにメールを送信することはございません。
     = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
       = render "devise/shared/error_messages", resource: resource
       .field
