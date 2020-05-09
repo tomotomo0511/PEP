@@ -1,4 +1,4 @@
-.sign-up-page {
+.sign-in-page {
   width: 100vw;
   height: 85vh;
   background-color: whitesmoke;
@@ -13,7 +13,7 @@
     margin: 50px 0 0 50px;
     padding: 30px 0 50px 0;
     font-size: 10px;
-    .sign-up-title-message {
+    .sign-in-title-message {
       font-size: 15px;
       font-weight: bold;
       margin-bottom: 30px;
@@ -22,7 +22,7 @@
 }
 
 @media (min-width: 480px){
-  .sign-up-page {
+  .sign-in-page {
     width: 100vw;
     height: 100vh;
     background-color: whitesmoke;
@@ -36,7 +36,7 @@
       position: absolute;
       margin: 100px 0 0 435px;
       padding: 50px 0 80px 0;
-      .sign-up-title-message {
+      .sign-in-title-message {
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 30px;
