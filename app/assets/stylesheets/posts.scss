@@ -163,6 +163,9 @@
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center;
+              .post-image-link {
+                display: none;
+              }
             }
           }
           .post-content__footer {

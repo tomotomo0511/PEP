@@ -6,6 +6,7 @@
           -# .post-content__header
           .post-content__image
             .post-content__image__box{:style => "background-image: url(#{post.image});"}
+            -# = link_to post.image, "/posts/#{post.id}", class: "post-image-link"
           .post-content__footer
             .post-content__footer__box
               .post-content__footer__box__title
