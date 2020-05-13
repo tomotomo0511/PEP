@@ -9,6 +9,12 @@
    width: 100vw;
    &__background-image {
     //  border: solid 1px black;
+    .form_background_image {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
      height: 200px;
      background-size: cover;
      background-position: center;
