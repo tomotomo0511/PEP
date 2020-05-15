@@ -5,7 +5,7 @@
       %p.new-post-messages-strong 画像拡張子がHEIF形式だと作成した記事が保存されません。（HEIF形式に対応していない為）
       %p.new-post-messages-strong iOSデバイス(iPhone)で投稿すると問題なく投稿できます。（拡張子をHEIFからJPEGに変換してくれる為）
       %p.new-post-title ※記事投稿時の注意 
-      %p.new-post-messages-strong 必ず「記事タイトル」「記事本文」の入力フォームに記述を行ってください。作成記事が保存されません。
+      %p.new-post-messages-strong 必ず「記事タイトル」「記事本文」の入力フォームに記述を行ってください。記事が保存されません。
     .new-post__main__forms
       = form_with model: @post, class: :form, local: true do |form|
         = form.file_field :image, placeholder: :画像URL, class: :form_image
