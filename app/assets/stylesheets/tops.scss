@@ -465,6 +465,7 @@
         font-weight: bold;
         @keyframes typing { from { width: 0; } }
         @keyframes caret { 50% { border-color: transparent; } }
+        width: auto;
         width: 3.2ch;
         border-right: .02em solid;
         overflow: hidden;
