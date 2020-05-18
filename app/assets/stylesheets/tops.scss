@@ -8,11 +8,11 @@
     color: white;
     font-size: 30px;
     position: absolute;
-    margin: 240px 0 0 180px;
+    margin: 250px 0 0 180px;
     font-weight: bold;
     @keyframes typing { from { width: 0; } }
     @keyframes caret { 50% { border-color: transparent; } }
-    width: 3.4ch;
+    width: 3.5ch;
     height: 40px;
     border-right: .02em solid;
     overflow: hidden;
@@ -463,13 +463,25 @@
     position: relative;
     &__title {
       // text-align: center;
-      // color: white;
-      // font-size: 130px;
+      color: white;
+      font-size: 130px;
       // margin: auto;
       // position: absolute;
-      // z-index: 1;
+      z-index: 1;
+      // margin: 100px 0 0 180px;
+      // font-weight: bold;
+      @keyframes typing { from { width: 0; } }
+      @keyframes caret { 50% { border-color: transparent; } }
+      width: 3.7ch;
+      height: 180px;
+      width: 250px;
+      border-right: .02em solid;
+      // border: solid 1px;
+      overflow: hidden;
+      animation: typing 800ms steps(3, end), caret .9s step-end infinite;
+      text-shadow: black 2px 2px 6px;
       .top-page-main-title {
-        // margin: 270px 0 0 180px;
+        margin: 0;
         // font-weight: bold;
         // @keyframes typing { from { width: 0; } }
         // @keyframes caret { 50% { border-color: transparent; } }
