@@ -9,18 +9,14 @@
     font-size: 30px;
     position: absolute;
     .top-page-main-title {
-      // transform: translate(50%, 600%);
-      position: relative;
       margin: 260px 0 0 180px;
       font-weight: bold;
       // @keyframes typing { from { width: 0; } }
-      @keyframes caret { 50% { border-color: transparent; } }
-      width: auto;
-      height: auto;
+      // @keyframes caret { 50% { border-color: transparent; } }
       width: 3.3ch;
       border-right: .02em solid;
       overflow: hidden;
-      animation: typing 800ms steps(3, end), caret .9s step-end infinite;
+      // animation: typing 800ms steps(3, end), caret .9s step-end infinite;
       text-shadow: black 2px 2px 6px;
     }
   //   &__texts {
@@ -463,18 +459,14 @@
       position: absolute;
       z-index: 1;
       .top-page-main-title {
-        // position: absolute;
-        position: relative;
         margin: 270px 0 0 180px;
         font-weight: bold;
         // @keyframes typing { from { width: 0; } }
         // @keyframes caret { 50% { border-color: transparent; } }
-        width: auto;
-        height: auto;
         width: 3.2ch;
         border-right: .02em solid;
         overflow: hidden;
-        animation: typing 800ms steps(3, end), caret .9s step-end infinite;
+        // animation: typing 800ms steps(3, end), caret .9s step-end infinite;
         text-shadow: black 2px 2px 6px;
       }
       &__texts {
