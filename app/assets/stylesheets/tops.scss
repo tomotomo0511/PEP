@@ -4,22 +4,22 @@
   width: 100vw;
   position: relative;
   font-family: serif;
-  // &__title {
-  //   color: white;
-  //   font-size: 30px;
-  //   position: absolute;
-  //   .top-page-main-title {
-  //     // transform: translate(50%, 600%);
-  //     margin: 270px 0 0 50px;
-  //     font-weight: bold;
-  //     @keyframes typing { from { width: 0; } }
-  //     @keyframes caret { 50% { border-color: transparent; } }
-  //     width: 3ch;
-  //     border-right: .02em solid;
-  //     overflow: hidden;
-  //     animation: typing 800ms steps(3, end), caret .9s step-end infinite;
-  //     text-shadow: black 2px 2px 6px;
-  //   }
+  &__title {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    .top-page-main-title {
+      // transform: translate(50%, 600%);
+      margin: 260px 0 0 180px;
+      font-weight: bold;
+      @keyframes typing { from { width: 0; } }
+      @keyframes caret { 50% { border-color: transparent; } }
+      width: 3.3ch;
+      border-right: .02em solid;
+      overflow: hidden;
+      animation: typing 800ms steps(3, end), caret .9s step-end infinite;
+      text-shadow: black 2px 2px 6px;
+    }
   //   &__texts {
   //     font-size: 20px;
   //     text-align: center;
@@ -42,7 +42,7 @@
   //       }
   //     }
   //   }
-  // }
+  }
   &__image {
     // border: solid 1px white;
     // margin-top: 250px;
@@ -369,7 +369,7 @@
     // width: 414px;
     &__title {
       .top-page-main-title {
-        margin: 300px 0 0 50px;
+        margin: 288px 0 0 220px;
       }
     }
   }
@@ -383,7 +383,7 @@
     // width: 414px;
     &__title {
       .top-page-main-title {
-        margin: 290px 0 0 50px;
+        margin: 295px 0 0 220px;
       }
     }
   }
@@ -446,7 +446,6 @@
 
 
 
-
 @media (min-width: 769px){
   .top-page {
     background-color: whitesmoke;
@@ -462,11 +461,11 @@
       z-index: 1;
       .top-page-main-title {
         position: absolute;
-        margin: 270px 0 0 150px;
+        margin: 270px 0 0 180px;
         font-weight: bold;
         @keyframes typing { from { width: 0; } }
         @keyframes caret { 50% { border-color: transparent; } }
-        width: 3.1ch;
+        width: 3.2ch;
         border-right: .02em solid;
         overflow: hidden;
         animation: typing 800ms steps(3, end), caret .9s step-end infinite;
