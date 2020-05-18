@@ -9,9 +9,9 @@
       .user-page__profile__content__text
         = link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "user-logout"
         -# ユーザーの自己紹介蘭（作成中）
-        = form_with model: @user, class: :form, local: true do |form|
-          = form.file_field :background_image, placeholder: :画像URL, class: :form_background_image
-          = form.submit '背景画像設定', class: :form_btn
+        -# = form_with model: @user, class: :form, local: true do |form|
+        -#   = form.file_field :background_image, placeholder: :画像URL, class: :form_background_image
+        -#   = form.submit '背景画像設定', class: :form_btn
   .user-page__posts
     .user-page__posts__box
       - @posts.each do |post|
