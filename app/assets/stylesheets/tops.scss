@@ -452,6 +452,11 @@
     height: 92vh;
     width: 100%;
     position: relative;
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+      _::-webkit-full-page-media, _:future, :root body {
+          background-color: #eee;
+      }
+  }
     &__title {
       text-align: center;
       color: white;
