@@ -452,11 +452,6 @@
     height: 92vh;
     width: 100%;
     position: relative;
-    @media screen and (-webkit-min-device-pixel-ratio:0) {
-      _::-webkit-full-page-media, _:future, :root body {
-          background-color: #eee;
-      }
-  }
     &__title {
       text-align: center;
       color: white;
@@ -465,12 +460,14 @@
       position: absolute;
       z-index: 1;
       .top-page-main-title {
-        position: absolute;
+        // position: absolute;
+        position: relative;
         margin: 270px 0 0 180px;
         font-weight: bold;
         @keyframes typing { from { width: 0; } }
         @keyframes caret { 50% { border-color: transparent; } }
         width: auto;
+        height: auto;
         width: 3.2ch;
         border-right: .02em solid;
         overflow: hidden;
