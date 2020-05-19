@@ -8,7 +8,7 @@
     color: white;
     font-size: 30px;
     position: absolute;
-    margin: 250px 0 0 180px;
+    margin: 255px 0 0 180px;
     font-weight: bold;
     @keyframes typing { from { width: 0; } }
     @keyframes caret { 50% { border-color: transparent; } }
@@ -377,8 +377,9 @@
   .top-page {
     // width: 414px;
     &__title {
+      margin: 280px 0 0 200px;
       .top-page-main-title {
-        margin: 288px 0 0 220px;
+        // margin: 288px 0 0 220px;
       }
     }
   }
@@ -391,8 +392,9 @@
   .top-page {
     // width: 414px;
     &__title {
+      margin: 290px 0 0 200px;
       .top-page-main-title {
-        margin: 295px 0 0 220px;
+        // margin: 295px 0 0 220px;
       }
     }
   }
@@ -405,8 +407,9 @@
   .top-page {
     // width: 414px;
     &__title {
+      margin: 400px 0 0 60px;
       .top-page-main-title {
-        margin: 390px 0 0 50px;
+        // margin: 390px 0 0 50px;
       }
     }
   }
@@ -426,7 +429,7 @@
     // width: 414px;
     &__title {
       .top-page-main-title {
-        margin: 350px 0 0 50px;
+        // margin: 350px 0 0 50px;
       }
     }
   }
@@ -468,7 +471,7 @@
       // margin: auto;
       // position: absolute;
       z-index: 1;
-      margin: 260px 0 0 200px;
+      margin: 280px 0 0 200px;
       // font-weight: bold;
       @keyframes typing { from { width: 0; } }
       @keyframes caret { 50% { border-color: transparent; } }
