@@ -1,7 +1,7 @@
 .sign-in-page
   .sign-in-page__main
     %h2.sign-in-title-message アカウントログイン
-    %h4 登録したメールアドレスとパスワードを入力してください
+    %h4.sign-in-text メールアドレスとパスワードを入力してください
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       .field
         = f.label :メールアドレス
