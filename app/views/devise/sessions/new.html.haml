@@ -6,14 +6,14 @@
       .field
         = f.label :メールアドレス
         %br/
-        = f.email_field :email, autofocus: true, autocomplete: "email"
+        = f.email_field :email, autofocus: true, autocomplete: "email", class: "sign-in-form"
       .field
         = f.label :パスワード
         %br/
-        = f.password_field :password, autocomplete: "current-password"
+        = f.password_field :password, autocomplete: "current-password", class: "sign-in-form"
       - if devise_mapping.rememberable?
         .field
-          = f.check_box :remember_me
-          = f.label :内容を保存しますか？
+          -# = f.check_box :remember_me
+          -# = f.label :内容を保存しますか？
       .actions
         = f.submit "ログイン", class: "sign-in-btn"
