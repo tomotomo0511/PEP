@@ -23,6 +23,29 @@ Things you may want to cover:
 
 * ...
 
+【アプリ名】　
+・PEP
+
+【概要】(このアプリでできること)
+・
+
+【本番環境】(デプロイ先　テストアカウント＆ID)
+・
+
+【制作背景】(意図)どんな課題や不便なことを解決するためにこのアプリを作ったのか。
+・
+
+【工夫したポイント】
+・
+
+【使用技術】(開発環境)
+・
+
+【課題や今後実装したい機能】
+・
+
+【DB設計】
+
 ## usersテーブル
 |Colum|Type|Options|
 |-----|----|-------|
@@ -32,8 +55,6 @@ Things you may want to cover:
 
 - has_many :posts
 - has_many :comments
-- has_many :followers
-- has_many :likes
 
 
 ## postsテーブル
@@ -44,27 +65,7 @@ Things you may want to cover:
 |image|text||
 
 - belongs_to :user
-- has_many :post_tags
 - has_many :comments
-- has_many :tags, through:  :post_tags
-- has_many :likes
-
-## tagsテーブル
-|Colum|Type|Options|
-|-----|----|-------|
-|content|text|
-
-- has_many :post_tags
-_ has_many :posts, through:  :post_tags
-
-## post_tagsテーブル
-|Colum|Type|Options|
-|-----|----|-------|
-|post_id|integer|null: false, foreign_kye: true|
-|tag_id|integer|null: false, foreign_kye: true|
-
-- belongs_to :post
-- belongs_to :tag
 
 ## commentsテーブル
 |Colum|Type|Options|
@@ -75,20 +76,3 @@ _ has_many :posts, through:  :post_tags
 
 - belongs_to :user
 - belongs_to :post
-
-## likesテーブル
-|Colum|Type|Options|
-|-----|----|-------|
-|post_id|integer|null: false, foreign_kye: true|
-|user_id|integer|null: false, foreign_kye: true|
-
-- belongs_to :user
-- belongs_to :post
-
-## followersテーブル
-|Colum|Type|Options|
-|-----|----|-------|
-|followers_id|integer|null: false, foreign_kye: true|
-|user_id|integer|null: false, foreign_kye: true|
-
-- belongs_to :user
