@@ -25,26 +25,20 @@
       margin: auto 0;
       width: 100%;
       .header-box {
-        color: lightgray;
+        color: white;
         text-decoration: none;
         font-weight: bold;
         // border: solid 1px white;
         font-size: 10px;
         margin-right: 10px;
-        &:hover {
-          color: white;
-        }
       }
       .header-box-dog {
-        color: lightgray;
+        color: white;
         text-decoration: none;
         margin-right: 40px;
         font-weight: bold;
         font-size: 15px;
         // border: solid 1px white;
-        &:hover {
-          color: white;
-        }
       }
     }
   }
