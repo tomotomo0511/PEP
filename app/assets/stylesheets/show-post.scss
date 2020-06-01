@@ -172,6 +172,15 @@
       }
     }
   }
+  .comment-alert-text {
+    width: 97%;
+    height: auto;
+    text-align: center;
+    background-color: white;
+    margin:  30px auto auto auto;
+    padding: 15px 0;
+    font-size: 10px;
+  }
   &__article-edit-delete {
     // border: solid 1px;
     width: 80%;
@@ -400,9 +409,11 @@
         }
       }
     }
-  
-  
-  
+    .comment-alert-text {
+      width: 85%;
+      padding: 30px 0;
+      font-size: 16px;
+    }
     &__article-edit-delete {
       // border: solid 1px;
       width: 50%;
