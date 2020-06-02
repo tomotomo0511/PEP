@@ -29,7 +29,12 @@
           .show-post__comment-form__down
             = form.submit 'コメントする', class: "form-comment-btn"
       - else
-        %p.comment-alert-text コメントの投稿にはアカウント登録/ログインが必要です
+        %p.comment-alert-text 
+          コメントの投稿には
+          = link_to 'アカウント登録', new_user_registration_path, class: "comment-text-box"
+          ／
+          = link_to 'ログイン', new_user_session_path, class: "comment-text-box"
+          が必要です
     .show-post__article-edit-delete
       - if user_signed_in? && current_user.id == @post.user_id
         = link_to "記事の編集", edit_post_path(@post.id), class: "article-edit"
