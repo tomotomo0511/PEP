@@ -30,7 +30,7 @@
             = form.submit 'コメントする', class: "form-comment-btn"
       - else
         %p.comment-alert-text 
-          コメントの投稿には
+          コメント投稿は
           = link_to 'アカウント登録', new_user_registration_path, class: "comment-text-box"
           ／
           = link_to 'ログイン', new_user_session_path, class: "comment-text-box"
