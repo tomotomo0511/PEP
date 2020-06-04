@@ -74,25 +74,25 @@
         margin: auto 0;
         width: 300px;
         .header-box {
-          color: lightgray;
+          color: white;
           margin: auto 10px;
           text-decoration: none;
           font-weight: bold;
           // border: solid 1px white;
           font-size: 20px;
           &:hover {
-            color: white;
+            color: lightgray;
           }
         }
         .header-box-dog {
-          color: lightgray;
+          color: white;
           text-decoration: none;
           margin-right: 100px;
           font-weight: bold;
           font-size: 25px;
           // border: solid 1px white;
           &:hover {
-            color: white;
+            color: lightgray;
           }
         }
       }
