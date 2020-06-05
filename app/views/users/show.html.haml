@@ -20,6 +20,8 @@
             .user-page__posts__box__content__background__image{:style => "background-image: url(#{post.image});"}
           .user-page__posts__box__content__title
             = link_to post.title, post_path(post.id), class: "user_post_title"
+          .user-page__posts__box__content__text
+            = post.content
 
 
 
