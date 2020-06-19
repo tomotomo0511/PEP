@@ -77,7 +77,11 @@ GIF画像↓
 <br>
 https://gyazo.com/a6871e32e52d32819f258f26c97c2c81
 <br>
-レスポンシブデザインも対応しております。
+スマートフォンのレスポンシブデザインも作成しております。
+<br>
+<img width="338" alt="PEP_レスポンシブ対応" src="https://user-images.githubusercontent.com/60679433/85119680-160ee900-b25d-11ea-85ea-3213ed3ef2e8.png">
+<br>
+<img width="341" alt="PEP_レスポンシブデザイン２" src="https://user-images.githubusercontent.com/60679433/85119725-26bf5f00-b25d-11ea-9c88-b144373c064b.png">
 <br>
 GIF画像↓
 <br>
