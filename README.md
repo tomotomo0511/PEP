@@ -61,8 +61,9 @@ http://3.115.36.227/
 ## 【工夫したポイント】
 シンプルな見た目ですっきりとしたデザインを意識しました。
 <br>
+![PEP_トップページ](https://user-images.githubusercontent.com/60679433/85118487-5ff6cf80-b25b-11ea-950f-5a30e6f495c8.jpg)
+<br>
 https://gyazo.com/3e265ed85002b242ee230613958ddd1d
-![PEP_トップページGIF](https://user-images.githubusercontent.com/60679433/85114796-93cef680-b255-11ea-853c-3c91048eb54b.GIF)
 <br>
 トップページ画像は直感的にサイトのイメージが伝わるように意識しました。
 <br>
@@ -70,9 +71,13 @@ https://gyazo.com/3e265ed85002b242ee230613958ddd1d
 <br>
 トップページの三段構成の画像は一定時間で消え、また違う画像が洗われるようにアニメーションを作成しました。
 <br>
+GIF画像↓
+<br>
 https://gyazo.com/a6871e32e52d32819f258f26c97c2c81
 <br>
 レスポンシブデザインも対応しております。
+<br>
+GIF画像↓
 <br>
 https://gyazo.com/e01179ac540cccb325a16071dc9491d2
 
