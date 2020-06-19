@@ -63,7 +63,9 @@ http://3.115.36.227/
 <br>
 ![PEP_トップページ](https://user-images.githubusercontent.com/60679433/85118487-5ff6cf80-b25b-11ea-950f-5a30e6f495c8.jpg)
 <br>
-https://gyazo.com/3e265ed85002b242ee230613958ddd1d
+<img width="1440" alt="PEP_記事内容" src="https://user-images.githubusercontent.com/60679433/85118967-017e2100-b25c-11ea-908d-8e01af50c7e9.png">
+<br>
+![PEP_最新記事一覧](https://user-images.githubusercontent.com/60679433/85119053-2bcfde80-b25c-11ea-93b2-15c8e9994291.jpg)
 <br>
 トップページ画像は直感的にサイトのイメージが伝わるように意識しました。
 <br>
