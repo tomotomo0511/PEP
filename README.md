@@ -62,6 +62,7 @@ http://3.115.36.227/
 シンプルな見た目ですっきりとしたデザインを意識しました。
 <br>
 https://gyazo.com/3e265ed85002b242ee230613958ddd1d
+![PEP_トップページGIF](https://user-images.githubusercontent.com/60679433/85114796-93cef680-b255-11ea-853c-3c91048eb54b.GIF)
 <br>
 トップページ画像は直感的にサイトのイメージが伝わるように意識しました。
 <br>
