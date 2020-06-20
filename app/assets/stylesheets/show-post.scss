@@ -6,7 +6,6 @@
   &__main {
     width: 90vw;
     height: 100%;
-    // border: solid 1px black;
     margin: auto;
     background-color: white;
     border-radius: 5px;
@@ -15,7 +14,6 @@
     &__image {
       height: 200px;
       width: 100%;
-      // border: solid 1px black;
       margin: auto;
       background-color: black;
       border-radius: 5px;
@@ -30,7 +28,6 @@
     &__title {
       height: auto;
       width: 90%;
-      // border: solid 1px black;
       margin: auto;
       font-size: 13px;
       font-weight: bold;
@@ -40,7 +37,6 @@
     &__user-name {
       height: auto;
       width: 90%;
-      // border: solid 1px black;
       margin: auto;
       font-size: 12px;
       .show-user-link {
@@ -55,7 +51,6 @@
     &__created-at {
       height: auto;
       width: 90%;
-      // border: solid 1px black;
       margin: auto;
       color: gray;
       font-size: 10px;
@@ -63,7 +58,6 @@
     &__text {
       height: auto;
       width: 100%;
-      // border: solid 1px black;
       margin: auto;
       font-size: 13px;
       padding: 40px 0;
@@ -77,9 +71,7 @@
   &__comment {
     height: auto;
     width: 100%;
-    // background-color: lightskyblue;
     padding: 40px 0;
-    // border: solid 1px black;
     margin: auto;
     font-family: serif;
     .comment-form-title {
@@ -95,7 +87,6 @@
       background-color: white;
       width: 60%;
       margin: auto;
-      // border-radius: 0 0 5px 5px;
       padding: 25px 40px 20px 40px;
       &__name {
         .show-comment-name {
@@ -103,7 +94,6 @@
           text-decoration: none;
           font-weight: bold;
           font-size: 12px;
-          // background-color: lightcoral;
           &:hover {
             color: gray;
           }
@@ -117,7 +107,6 @@
       &__text {
         padding: 10px 0;
         .show-comment-text {
-          // background-color: lightgreen;
           font-size: 10px;
         }
       }
@@ -130,21 +119,15 @@
     width: 90%;
     margin: 30px auto;
     font-family: serif;
-    // border: solid 1px black;
-    // background-color: lightpink;
-    // padding: 40px 0;
     &__up {
       width: 100%;
       height: auto;
-      // background-color: lightseagreen;
       margin: auto;
       .form-comment {
         width: 85%;
         height: 100px;
         font-size: 12px;
-        // border: solid 1px black;
         border: none;
-        // border-radius: 5px 0;
         margin-left: 12px;
         padding: 15px 10px 20px 15px;
       }
@@ -152,13 +135,10 @@
     &__down {
       width: 35%;
       height: auto;
-      // background-color: maroon;
-      // margin-left: 385px;
       margin: auto;
       .form-comment-btn {
         width: 100%;
         height: 27px;
-        // border: solid 1px black;
         border-radius: 5px;
         margin: 20px 0 0 0px;
         border: none;
@@ -193,7 +173,6 @@
     }
   }
   &__article-edit-delete {
-    // border: solid 1px;
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -259,7 +238,6 @@
     &__main {
       width: 45%;
       height: 100%;
-      // border: solid 1px black;
       margin: auto;
       background-color: white;
       border-radius: 5px;
@@ -267,7 +245,6 @@
       &__image {
         height: 370px;
         width: 100%;
-        // border: solid 1px black;
         margin: auto;
         background-color: black;
         border-radius: 5px;
@@ -282,7 +259,6 @@
       &__title {
         height: auto;
         width: 90%;
-        // border: solid 1px black;
         margin: auto;
         font-size: 25px;
         font-weight: bold;
@@ -292,7 +268,6 @@
       &__user-name {
         height: auto;
         width: 90%;
-        // border: solid 1px black;
         margin: auto;
         .show-user-link {
           color: black;
@@ -307,7 +282,6 @@
       &__created-at {
         height: auto;
         width: 90%;
-        // border: solid 1px black;
         margin: auto;
         color: gray;
         font-size: 12px;
@@ -315,7 +289,6 @@
       &__text {
         height: auto;
         width: 90%;
-        // border: solid 1px black;
         margin: auto;
         font-size: 15px;
         padding: 40px 0;
@@ -329,9 +302,7 @@
     &__comment {
       height: auto;
       width: 89%;
-      // background-color: lightskyblue;
       padding: 40px 0;
-      // border: solid 1px black;
       margin: auto;
       .comment-form-title {
         text-align: center;
@@ -346,7 +317,6 @@
         background-color: white;
         width: 46.5%;
         margin: auto;
-        // border-radius: 0 0 5px 5px;
         padding: 25px 40px 20px 40px;
         &__name {
           .show-comment-name {
@@ -354,7 +324,6 @@
             text-decoration: none;
             font-weight: bold;
             font-size: 14px;
-            // background-color: lightcoral;
             &:hover {
               color: gray;
             }
@@ -368,7 +337,6 @@
         &__text {
           padding: 10px 0;
           .show-comment-text {
-            // background-color: lightgreen;
             font-size: 14px;
           }
         }
@@ -379,21 +347,14 @@
     &__comment-form {
       height: auto;
       width: 61.7%;
-      // margin: auto;
-      // border: solid 1px black;
-      // background-color: lightpink;
-      // padding: 40px 0;
       &__up {
         width: 100%;
         height: auto;
-        // background-color: lightseagreen;
         margin: auto;
         .form-comment {
           width: 636px;
           height: 100px;
-          // border: solid 1px black;
           border: none;
-          // border-radius: 5px 0;
           margin-left: 57px;
           padding: 25px 0 40px 40px;
         }
@@ -401,13 +362,10 @@
       &__down {
         width: 86%;
         height: auto;
-        // background-color: maroon;
         margin-left: 25px;
-        // margin: auto;
         .form-comment-btn {
           width: 100px;
           height: 27px;
-          // border: solid 1px black;
           border-radius: 5px;
           margin: 20px 0 0 320px;
           border: none;
@@ -438,7 +396,6 @@
       }
     }
     &__article-edit-delete {
-      // border: solid 1px;
       width: 50%;
       display: flex;
       justify-content: space-between;

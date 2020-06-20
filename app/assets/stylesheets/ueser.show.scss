@@ -1,15 +1,12 @@
 .user-page {
-//  border: solid 1px black; 
  background-color: whitesmoke;
  height: auto;
  width: 100%;
  font-family: serif;
  &__main {
-  //  border: solid 1px black;
    height: 200px;
    width: 100vw;
    &__background-image {
-    //  border: solid 1px black;
     .form_background_image {
       height: 200px;
       background-size: cover;
@@ -20,24 +17,20 @@
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
-    //  background-image: url(https://cdn.pixabay.com/photo/2018/09/21/12/02/tangerine-3692952_1280.jpg);
      background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973461_1280.png);
    }
  }
  &__profile {
-  // border: solid 1px black;
   width: 100vw;
   height: auto;
   margin: auto;
   display: flex;
   background-color: white;
   &__content {
-    // border: solid 1px black;
     height: auto;
     width: 65%;
     margin: auto;
     &__name {
-      // border: solid 1px black;
       height: auto;
       width: 80%;
       color: black;
@@ -47,7 +40,6 @@
       padding: 15px 0 10px 0;
     }
     &__text {
-      // border: solid 1px black;
       height: auto;
       width: 80%;
       color: #16160e;
@@ -69,23 +61,18 @@
   }
  }
  &__posts {
-  // border: solid 1px black;
   height: auto;
   width: 100vw;
   background-color: whitesmoke;
   padding: 40px 0;
   &__box {
-    // border: solid 1px black;
     height: auto;
     width: 100vw;
     margin:  auto;
-    // overflow: scroll;
     &__content {
-      // border: solid 1px black;
       height: auto;
       width: 90vw;
       background-color: whitesmoke;
-      // padding: 20px 15px 20px 15px;
       border-radius: 5px;
       margin: 20px auto;
       &:hover {
@@ -127,7 +114,6 @@
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
-        // border: solid 1px black; 
         letter-spacing: 1px;
         white-space: pre-wrap;
         color: dimgray;  
@@ -143,37 +129,30 @@
 
 @media (min-width: 480px){
   .user-page {
-    //  border: solid 1px black; 
      background-color: whitesmoke;
      height: auto;
      width: 100%;
      &__main {
-      //  border: solid 1px black;
        height: 500px;
        &__background-image {
-        //  border: solid 1px black;
          height: 500px;
          background-size: cover;
          background-position: 60% 38%;
          background-repeat: no-repeat;
-        //  background-image: url(https://cdn.pixabay.com/photo/2018/09/21/12/02/tangerine-3692952_1280.jpg);
          background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973461_1280.png);
        }
      }
      &__profile {
-      // border: solid 1px black;
       width: 100%;
       height: auto;
       margin: auto;
       display: flex;
       background-color: white;
       &__content {
-        // border: solid 1px black;
         height: auto;
         width: 65%;
         margin: auto;
         &__name {
-          // border: solid 1px black;
           height: auto;
           width: 80%;
           color: black;
@@ -183,7 +162,6 @@
           padding: 15px 0 10px 0;
         }
         &__text {
-          // border: solid 1px black;
           height: auto;
           width: 80%;
           color: #16160e;
@@ -205,18 +183,14 @@
       }
      }
      &__posts {
-      // border: solid 1px black;
       height: auto;
       background-color: whitesmoke;
       padding: 40px 0;
       &__box {
-        // border: solid 1px black;
         height: auto;
         width: 100%;
         margin:  auto;
-        // overflow: scroll;
         &__content {
-          // border: solid 1px black;
           height: auto;
           width: 650px;
           background-color: whitesmoke;

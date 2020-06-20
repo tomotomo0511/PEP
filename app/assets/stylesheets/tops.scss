@@ -19,46 +19,12 @@
     animation: typing 800ms steps(3, end), caret .9s step-end infinite;
     text-shadow: black 2px 2px 6px;
     .top-page-main-title {
-      // margin: 260px 0 0 180px;
-      // font-weight: bold;
-      // @keyframes typing { from { width: 0; } }
-      // @keyframes caret { 50% { border-color: transparent; } }
-      // width: 3.3ch;
-      // border-right: .02em solid;
-      // overflow: hidden;
-      // animation: typing 800ms steps(3, end), caret .9s step-end infinite;
-      // text-shadow: black 2px 2px 6px;
     }
-  //   &__texts {
-  //     font-size: 20px;
-  //     text-align: center;
-  //     .top-welcome-text {
-  //       color: white;
-  //       display: block;
-  //       text-decoration: none;
-  //       &:hover {
-  //         color: goldenrod;
-  //         font-weight: bold;
-  //       }
-  //     }
-  //     .top-article-text {
-  //       color: white;
-  //       display: block;
-  //       text-decoration: none;
-  //       &:hover {
-  //         color: goldenrod;
-  //         font-weight: bold;
-  //       }
-  //     }
-  //   }
   }
   &__image {
-    // border: solid 1px white;
-    // margin-top: 250px;
     position: absolute;
     width: 100%;
     height: 100px;
-    // animation-delay:1s;
     @keyframes album {
       0% {
         opacity: 0;
@@ -107,31 +73,20 @@
     &__title {
       color: white;
       font-size: 15px;
-      // position: absolute;
       .top-page-main-title {
-        // transform: translate(50%, 100%);
         margin: 80px 0 0 10px;
         font-weight: bold;
-        // @keyframes typing { from { width: 0; } }
-        // @keyframes caret { 50% { border-color: transparent; } }
-        // width: 3ch;
-        // border-right: .02em solid;
-        // overflow: hidden;
-        // animation: typing 800ms steps(3, end), caret .9s step-end infinite;
         text-shadow: black 3px 3px 7px;
       }
     }
   }
   &__image-first {
-    // border: solid 1px white;
-    // margin-top: 189.3px;
     transform: translate(0%, 97.5%);
     position: absolute;
     width: 100%;
     height: 34.2%;
     background-size: cover;
     background-image: url(https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg);
-    // 黒机スマホ↑
     background-position: 100% 45%;
     animation-name: album;
     animation-duration: 13s;
@@ -140,8 +95,6 @@
     animation-delay:0s;
   }
   &__image-second {
-    // border: solid 1px white;
-    // margin-top: 189.3px;
     transform: translate(0%, 97.5%);
     position: absolute;
     width: 100%;
@@ -156,15 +109,12 @@
     animation-delay:10s;
   }
   &__image-third {
-    // border: solid 1px white;
-    // margin-top: 189.3px;
     transform: translate(0%, 97.5%);
     position: absolute;
     width: 100%;
     height: 34.2%;
     background-size: cover;
     background-image: url(https://cdn.pixabay.com/photo/2016/03/09/10/37/light-bulb-1246043_1280.jpg);
-    // 釣竿↑
     background-position: 100% 45%;
     animation-name: album;
     animation-duration: 13s;
@@ -173,15 +123,12 @@
     animation-delay:20s;
   }
   &__image-fourth {
-    // border: solid 1px white;
-    // margin-top: 189.3px;
     transform: translate(0%, 97.5%);
     position: absolute;
     width: 100%;
     height: 34.2%;
     background-size: cover;
     background-image: url(https://cdn.pixabay.com/photo/2014/09/13/21/40/newspapers-444449_1280.jpg);
-    // 登山？↑
     background-position: 100% 63%;
     animation-name: album;
     animation-duration: 13s;
@@ -190,15 +137,12 @@
     animation-delay:30s;
   }
   &__image-fifth {
-    // border: solid 1px white;
-    // margin-top: 189.3px;
     transform: translate(0%, 97.5%);
     position: absolute;
     width: 100%;
     height: 34.2%;
     background-size: cover;
     background-image: url(https://cdn.pixabay.com/photo/2016/11/21/15/08/computer-1845880_1280.jpg);
-    // 釣竿↑
     background-position: 100% 90%;
     animation-name: album;
     animation-duration: 12s;
@@ -207,20 +151,16 @@
     animation-delay:40s;
   }
   &__image-top {
-    // border: solid 1px white;
     position: absolute;
     width: 100%;
     height: 33%;
-    // animation-delay:10s;
   }
   &__image-top-first {
-    // border: solid 1px white;
     position: absolute;
     width: 100%;
     height: 33%;
     background-size: cover;
     background-image: url(https://cdn.pixabay.com/photo/2015/06/08/15/09/photography-801891_1280.jpg);
-    // 白机スマホ↑
     background-position: 100% 55%;
     animation-name: album;
     animation-duration: 10s;
@@ -229,7 +169,6 @@
     animation-delay:0s;
   }
   &__image-top-second {
-    // border: solid 1px white;
     position: absolute;
     width: 100%;
     height: 33%;
@@ -243,7 +182,6 @@
     animation-delay:7s;
   }
   &__image-top-third {
-    // border: solid 1px white;
     position: absolute;
     width: 100%;
     height: 33%;
@@ -257,7 +195,6 @@
     animation-delay:17s;
   }
   &__image-top-fourth {
-    // border: solid 1px white;
     position: absolute;
     width: 100%;
     height: 33%;
@@ -271,7 +208,6 @@
     animation-delay:27s;
   }
   &__image-top-fifth {
-    // border: solid 1px white;
     position: absolute;
     width: 100%;
     height: 33%;
@@ -285,15 +221,12 @@
     animation-delay:37s;
   }
   &__image-bottom {
-    // border: solid 1px white;
     bottom: 0;
     position: absolute;
     width: 100%;
     height: 32%;
-    // animation-delay:10s;
   }
   &__image-bottom-first {
-    // border: solid 1px white;
     bottom: 0;
     position: absolute;
     width: 100%;
@@ -308,7 +241,6 @@
     animation-delay:0s;
   }
   &__image-bottom-second {
-    // border: solid 1px white;
     bottom: 0;
     position: absolute;
     width: 100%;
@@ -323,7 +255,6 @@
     animation-delay:5s;
   }
   &__image-bottom-third {
-    // border: solid 1px white;
     bottom: 0;
     position: absolute;
     width: 100%;
@@ -338,7 +269,6 @@
     animation-delay:15s;
   }
   &__image-bottom-fourth {
-    // border: solid 1px white;
     bottom: 0;
     position: absolute;
     width: 100%;
@@ -353,7 +283,6 @@
     animation-delay:25s;
   }
   &__image-bottom-fifth {
-    // border: solid 1px white;
     bottom: 0;
     position: absolute;
     width: 100%;
@@ -375,11 +304,9 @@
 
 @media (min-width: 321px){
   .top-page {
-    // width: 414px;
     &__title {
       margin: 280px 0 0 200px;
       .top-page-main-title {
-        // margin: 288px 0 0 220px;
       }
     }
   }
@@ -390,11 +317,9 @@
 
 @media (min-width: 361px) and (min-height: 641px){
   .top-page {
-    // width: 414px;
     &__title {
       margin: 290px 0 0 200px;
       .top-page-main-title {
-        // margin: 295px 0 0 220px;
       }
     }
   }
@@ -405,11 +330,9 @@
 
 @media (min-width: 361px) and (min-height: 668px){
   .top-page {
-    // width: 414px;
     &__title {
       margin: 400px 0 0 60px;
       .top-page-main-title {
-        // margin: 390px 0 0 50px;
       }
     }
   }
@@ -426,10 +349,8 @@
 
 @media (min-width: 376px){
   .top-page {
-    // width: 414px;
     &__title {
       .top-page-main-title {
-        // margin: 350px 0 0 50px;
       }
     }
   }
@@ -437,7 +358,6 @@
 
 @media (min-width: 415px){
   .top-page {
-    // width: 414px;
     &__title {
       font-size: 100px;
       .top-page-main-title {
@@ -465,34 +385,21 @@
     width: 100%;
     position: relative;
     &__title {
-      // text-align: center;
       color: white;
       font-size: 130px;
-      // margin: auto;
-      // position: absolute;
       z-index: 1;
       margin: 300px 0 0 200px;
-      // font-weight: bold;
       @keyframes typing { from { width: 0; } }
       @keyframes caret { 50% { border-color: transparent; } }
       width: 3.5ch;
       height: 180px;
       width: 250px;
       border-right: .02em solid;
-      // border: solid 1px;
       overflow: hidden;
       animation: typing 800ms steps(3, end), caret .9s step-end infinite;
       text-shadow: black 2px 2px 6px;
       .top-page-main-title {
         margin: 0;
-        // font-weight: bold;
-        // @keyframes typing { from { width: 0; } }
-        // @keyframes caret { 50% { border-color: transparent; } }
-        // width: 3.2ch;
-        // border-right: .02em solid;
-        // overflow: hidden;
-        // animation: typing 800ms steps(3, end), caret .9s step-end infinite;
-        // text-shadow: black 2px 2px 6px;
       }
       &__texts {
         font-size: 20px;
@@ -518,12 +425,10 @@
       }
     }
     &__image {
-      // border: solid 1px white;
       margin-top: 250px;
       position: absolute;
       width: 100%;
       height: 34%;
-      // animation-delay:1s;
       @keyframes album {
         0% {
           opacity: 0;
@@ -571,15 +476,11 @@
       }
     }
     &__image-first {
-      // border: solid 1px white;
-      // margin-top: 250px;
       transform: translate(0%, 100.5%);
       position: absolute;
       width: 100%;
       height: 34.2%;
       background-size: cover;
-      // background-image: url(https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg);
-      // 黒机スマホ↑
       background-position: 100% 45%;
       animation-name: album;
       animation-duration: 13s;
@@ -588,14 +489,11 @@
       animation-delay:0s;
     }
     &__image-second {
-      // border: solid 1px white;
-      // margin-top: 250px;
       transform: translate(0%, 100.5%);
       position: absolute;
       width: 100%;
       height: 34.2%;
       background-size: cover;
-      // background-image: url(https://cdn.pixabay.com/photo/2017/06/16/07/00/breakfast-2408034_1280.jpg);
       background-position: 100% 45%;
       animation-name: album;
       animation-duration: 13s;
@@ -604,15 +502,11 @@
       animation-delay:10s;
     }
     &__image-third {
-      // border: solid 1px white;
-      // margin-top: 250px;
       transform: translate(0%, 100.5%);
       position: absolute;
       width: 100%;
       height: 34.2%;
       background-size: cover;
-      // background-image: url(https://cdn.pixabay.com/photo/2016/08/05/14/48/fishing-1572408_1280.jpg);
-      // 釣竿↑
       background-position: 100% 45%;
       animation-name: album;
       animation-duration: 13s;
@@ -621,15 +515,11 @@
       animation-delay:20s;
     }
     &__image-fourth {
-      // border: solid 1px white;
-      // margin-top: 250px;
       transform: translate(0%, 100.5%);
       position: absolute;
       width: 100%;
       height: 34.2%;
       background-size: cover;
-      // background-image: url(https://cdn.pixabay.com/photo/2015/04/20/17/39/man-731900_1280.jpg);
-      // 登山？↑
       background-position: 100% 63%;
       animation-name: album;
       animation-duration: 13s;
@@ -638,15 +528,11 @@
       animation-delay:30s;
     }
     &__image-fifth {
-      // border: solid 1px white;
-      // margin-top: 250px;
       transform: translate(0%, 100.5%);
       position: absolute;
       width: 100%;
       height: 34.2%;
       background-size: cover;
-      // background-image: url(https://cdn.pixabay.com/photo/2016/11/21/15/08/computer-1845880_1280.jpg);
-      // 釣竿↑
       background-position: 100% 90%;
       animation-name: album;
       animation-duration: 12s;
@@ -655,20 +541,15 @@
       animation-delay:40s;
     }
     &__image-top {
-      // border: solid 1px white;
       position: absolute;
       width: 100%;
       height: 34%;
-      // animation-delay:10s;
     }
     &__image-top-first {
-      // border: solid 1px white;
       position: absolute;
       width: 100%;
       height: 34%;
       background-size: cover;
-      // background-image: url(https://cdn.pixabay.com/photo/2015/06/08/15/09/photography-801891_1280.jpg);
-      // 白机スマホ↑
       background-position: 100% 55%;
       animation-name: album;
       animation-duration: 10s;
@@ -677,12 +558,10 @@
       animation-delay:0s;
     }
     &__image-top-second {
-      // border: solid 1px white;
       position: absolute;
       width: 100%;
       height: 34%;
       background-size: cover;
-      // background-image: url(https://cdn.pixabay.com/photo/2020/04/13/10/48/coffee-5037804_1280.jpg);
       background-position: 100% 65%;
       animation-name: album;
       animation-duration: 13s;
@@ -691,12 +570,10 @@
       animation-delay:7s;
     }
     &__image-top-third {
-      // border: solid 1px white;
       position: absolute;
       width: 100%;
       height: 34%;
       background-size: cover;
-      // background-image: url(https://cdn.pixabay.com/photo/2019/01/24/09/37/shoes-3952048_1280.jpg);
       background-position: 100% 15%;
       animation-name: album;
       animation-duration: 13s;
@@ -705,12 +582,10 @@
       animation-delay:17s;
     }
     &__image-top-fourth {
-      // border: solid 1px white;
       position: absolute;
       width: 100%;
       height: 34%;
       background-size: cover;
-      // background-image: url(https://cdn.pixabay.com/photo/2020/02/04/10/42/camping-4817872_1280.jpg);
       background-position: 100% 70%;
       animation-name: album;
       animation-duration: 13s;
@@ -719,12 +594,10 @@
       animation-delay:27s;
     }
     &__image-top-fifth {
-      // border: solid 1px white;
       position: absolute;
       width: 100%;
       height: 34%;
       background-size: cover;
-      // background-image: url(https://cdn.pixabay.com/photo/2016/11/29/08/58/art-1868562_1280.jpg);
       background-position: 100% 50%;
       animation-name: album;
       animation-duration: 15s;
@@ -733,21 +606,17 @@
       animation-delay:37s;
     }
     &__image-bottom {
-      // border: solid 1px white;
       bottom: 0;
       position: absolute;
       width: 100%;
       height: 31%;
-      // animation-delay:10s;
     }
     &__image-bottom-first {
-      // border: solid 1px white;
       bottom: 0;
       position: absolute;
       width: 100%;
       height: 31%;
       background-size: cover;
-      // background-image: url(https://cdn.pixabay.com/photo/2018/07/11/16/32/hands-3531350_1280.jpg);
       background-position: 100% 55%;
       animation-name: album;
       animation-duration: 8s;
@@ -756,13 +625,11 @@
       animation-delay:0s;
     }
     &__image-bottom-second {
-      // border: solid 1px white;
       bottom: 0;
       position: absolute;
       width: 100%;
       height: 31%;
       background-size: cover;
-      // background-image: url(https://cdn.pixabay.com/photo/2019/04/30/17/58/restaurant-4169158_1280.jpg);
       background-position: 100% 35%;
       animation-name: album;
       animation-duration: 13s;
@@ -771,13 +638,11 @@
       animation-delay:5s;
     }
     &__image-bottom-third {
-      // border: solid 1px white;
       bottom: 0;
       position: absolute;
       width: 100%;
       height: 31%;
       background-size: cover;
-      // background-image: url(https://cdn.pixabay.com/photo/2013/11/28/10/03/golfing-219993_1280.jpg);
       background-position: 100% 50%;
       animation-name: album;
       animation-duration: 13s;
@@ -786,13 +651,11 @@
       animation-delay:15s;
     }
     &__image-bottom-fourth {
-      // border: solid 1px white;
       bottom: 0;
       position: absolute;
       width: 100%;
       height: 31%;
       background-size: cover;
-      // background-image: url(https://cdn.pixabay.com/photo/2016/11/22/21/36/audience-1850665_1280.jpg);
       background-position: 100% 40%;
       animation-name: album;
       animation-duration: 13s;
@@ -801,13 +664,11 @@
       animation-delay:25s;
     }
     &__image-bottom-fifth {
-      // border: solid 1px white;
       bottom: 0;
       position: absolute;
       width: 100%;
       height: 31%;
       background-size: cover;
-      // background-image: url(https://cdn.pixabay.com/photo/2016/11/29/09/42/camera-1868773_1280.jpg);
       background-position: 100% 50%;
       animation-name: album;
       animation-duration: 18.5s;

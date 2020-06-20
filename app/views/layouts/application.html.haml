@@ -1,14 +1,28 @@
 !!!
 %html
   %head
-    -# %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type", :name => "”viewport”"}/
-    -# %meta{content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0", name: "viewport"}
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
     %title PEP
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+    .header#header
+      .header__content
+        %h2.header-boxs
+          = link_to 'PEP', root_path, class: "header-box-dog"
+        %h2.header-boxs
+          = link_to '最新記事一覧', posts_path, class: "header-box"
+          - if user_signed_in?
+            %h2.header-boxs
+              = link_to "マイページ", user_path(current_user), class: "header-box"
+              = link_to '投稿', new_post_path, class: "header-box"
+          - else
+            %h2.header-boxs
+              = link_to '新規登録', new_user_registration_path, class: "header-box"
+              = link_to 'ログイン', new_user_session_path, class: "header-box"
+
     .header
       .header__content
         %h2.header-boxs
@@ -19,7 +33,6 @@
             %h2.header-boxs
               = link_to "マイページ", user_path(current_user), class: "header-box"
               = link_to '投稿', new_post_path, class: "header-box"
-              -# = link_to 'Log out', destroy_user_session_path, method: :delete, class: "header-box"
           - else
             %h2.header-boxs
               = link_to '新規登録', new_user_registration_path, class: "header-box"
@@ -27,16 +40,3 @@
     = yield
     .footer
       .footer__content ©︎PEP 2020
-    -#     %h2.footer-boxs
-    -#       = link_to 'Dog', root_path, class: "footer-box"
-    -#     %h2.footer-boxs
-    -#       = link_to 'New article', posts_path, class: "footer-box"
-    -#       - if user_signed_in?
-    -#         %h2.footer-boxs
-    -#           = link_to "My page", user_path(current_user), class: "footer-box"
-    -#           = link_to 'New post', new_post_path, class: "footer-box"
-    -#           = link_to 'Log out', destroy_user_session_path, method: :delete, class: "footer-box"
-    -#       - else
-    -#         %h2.footer-boxs
-    -#           = link_to 'Sign up', new_user_registration_path, class: "footer-box"
-    -#           = link_to 'Log in', new_user_session_path, class: "footer-box"

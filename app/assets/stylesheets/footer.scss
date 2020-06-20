@@ -1,22 +1,14 @@
 .footer {
   height: 80px;
   width: 100%;
-  // position: fixed;
-  // bottom: 0;
-  // border-top: solid 1px white;
-  // border: solid 1px black;
   background-color: white;
   font-family: serif;
   &__content {
     height: 80px;
     width: 100%;
-    // border-top: solid 1px white;
-    // border: solid 1px black;
     color: gray;
     text-align: center;
     line-height: 80px;
-    // display: flex;
-    // justify-content: space-between;
     .footer-boxs {
       text-align: center;
       margin: auto 0;
@@ -39,22 +31,14 @@
   .footer {
     height: 40px;
     width: 100%;
-    // position: fixed;
-    // bottom: 0;
-    // border-top: solid 1px white;
-    // border: solid 1px black;
     background-color: white;
     &__content {
       height: 40px;
       width: 100%;
-      // border-top: solid 1px white;
-      // border: solid 1px black;
       color: gray;
       text-align: center;
       line-height: 40px;
       font-size: 12px;
-      // display: flex;
-      // justify-content: space-between;
       .footer-boxs {
         text-align: center;
         margin: auto 0;
